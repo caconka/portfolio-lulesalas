@@ -1,0 +1,11 @@
+html {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+
+#app {
+  text-align: center;
+}
+
+.main-container {
+  max-width: 1060px;
+}
