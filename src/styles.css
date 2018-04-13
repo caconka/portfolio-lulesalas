@@ -1,11 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* GLOBALS */
+
+:root {
+  --gold: #e8d7bc;
+  --pink: #edbcb2;
+  --gray: #9b9b9b;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* GENERIC */
+
 html {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
-#app {
-  text-align: center;
+a {
+  color: var(--black);
+  text-decoration: none;
 }
 
-.main-container {
+.container {
   max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* COLORS */
+
+.pink {
+  color: var(--pink);
+}
+
+.white {
+  color: var(--white);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.bgGray {
+  background-color: var(--gray);
+}
+
+.black {
+  color: var(--black);
+}
+
+.bgBlack {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* ELEMENTS */
+
+.btn {
+  padding: .6em 1.1em;
 }
