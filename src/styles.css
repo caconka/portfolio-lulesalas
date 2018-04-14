@@ -8,6 +8,9 @@
   --gray: #9b9b9b;
   --black: #000000;
   --white: #ffffff;
+
+  --maxWidth: 1060px;
+  --navbarHeight: 4.5em;
 }
 
 /* GENERIC */
@@ -22,8 +25,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
-  max-width: 1060px;
+  max-width: var(--maxWidth);
   margin: 0 auto;
 }
 

@@ -1,15 +1,17 @@
 <template>
-  <nav class="container">
-    <div class="logo">
-      <img src="@/assets/flash-on.svg" class="icon__flash" alt="flash icon">
-      <span class="lule">lulesalas<span class="pink dot">.</span></span>
-    </div>
-    <div class="buttons">
-      <a href="" class="goToProject">UX/UI design</a>
-      <a href="" class="goToProject">Architecture</a>
-      <a href="" class="btn bgBlack">Contact me</a>
-    </div>
-  </nav>
+  <div class="navbar">
+    <nav class="container">
+      <div class="logo">
+        <img src="@/assets/flash-on.svg" class="icon__flash" alt="flash icon">
+        <span class="lule">lulesalas<span class="pink dot">.</span></span>
+      </div>
+      <div class="buttons">
+        <a href="">Diseño UX/UI</a>
+        <a href="">Arquitectura</a>
+        <a href="" class="btn bgBlack">Contacto</a>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>
@@ -20,11 +22,20 @@ export default {
 
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-  nav {
+
+  .navbar {
     display: flex;
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    justify-content: center;
+  }
+
+  nav {
+    background-color: #fff;
+    display: flex;
     justify-content: space-between;
-    height: 72px;
+    height: var(--navbarHeight);
+    margin: 0 auto;
+    position: fixed;
+    width: var(--maxWidth);
   }
 
   a {
