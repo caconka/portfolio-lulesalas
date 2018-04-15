@@ -1,20 +1,18 @@
 <template>
   <div class="navbar">
-    <!-- <div class="full-width"> -->
-      <nav>
-        <div class="logo">
-          <img src="@/assets/flash-on.svg" class="icon__flash" alt="flash icon">
-          <span class="lule playfair">
-            lulesalas<span class="pink dot">.</span>
-          </span>
-        </div>
-        <div class="buttons">
-          <a href="">Diseño UX/UI</a>
-          <a href="">Arquitectura</a>
-          <a href="" class="btn bgBlack">Contacto</a>
-        </div>
-      </nav>
-    <!-- </div> -->
+    <nav>
+      <div class="logo" v-scroll-to="{el:'#home', offset: - 72}">
+        <img src="@/assets/flash-on.svg" class="icon__flash" alt="flash icon">
+        <span class="lule playfair">
+          lulesalas<span class="pink dot">.</span>
+        </span>
+      </div>
+      <div class="buttons">
+        <a href="#" v-scroll-to="{el: '#uxui', offset: - 72}">Diseño UX/UI</a>
+        <a href="#" v-scroll-to="'#architecture'">Arquitectura</a>
+        <a href="#contact" class="btn bgBlack">Contacto</a>
+      </div>
+    </nav>
   </div>
 </template>
 
@@ -51,6 +49,10 @@
 
   .logo {
     margin-top: .2em;
+  }
+
+  .logo:hover {
+    cursor: pointer;
   }
 
   .buttons {

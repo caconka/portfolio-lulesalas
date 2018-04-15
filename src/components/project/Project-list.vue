@@ -2,7 +2,7 @@
   <div class="container__list">
     <!-- <app-project-basic v-for="project in projects"></app-project-basic> -->
     <header>
-      <h2 class="playfair">Proyectos</h2>
+      <h2 id="uxui" class="playfair">Proyectos</h2>
     </header>
     <section>
       <app-project-basic></app-project-basic>
@@ -29,8 +29,12 @@ export default {
     width: var(--maxWidth);
   }
 
+  #uxui {
+    margin-top: 0;
+  }
+
   .container__list {
-    margin-top: 10vh;
+    /* margin-top: 5vh; */
   }
 
 </style>

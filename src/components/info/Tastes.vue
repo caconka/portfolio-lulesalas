@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <section class="description">
-      <h2 class="header--important playfair">Me encanta lo que hago.</h2>
+      <h2 id="tastes" class="header--important playfair">
+        Me encanta lo que hago.
+      </h2>
       <div class="bar"></div>
       <ul class="description__list">
         <li class="gray">
@@ -81,6 +83,7 @@ export default {
 
   .header--important {
     margin-bottom: 0.5em;
+    margin-top: 0;
   }
 
   .bar {

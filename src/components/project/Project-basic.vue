@@ -6,7 +6,7 @@
           <img src="@/assets/mock-locspot.png" alt="">
         </div>
         <div class="project__card">
-          <h1 class="pink section">UX/UI DESIGN</h1>
+          <h1 class="pink section">DISEÑO UX/UI</h1>
           <header>
             <h2 class="playfair">Find the right location with locspot</h2>
           </header>
@@ -15,8 +15,8 @@
               Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y
             </p>
           </section>
-          <footer>
-            <a href="" class="btn bgBlack right">ver proyecto ______</a>
+          <footer class="right">
+            <a href="" class="btn bgBlack">ver proyecto ______</a>
           </footer>
         </div>
       </div>
@@ -24,7 +24,7 @@
     <div class="container__full--right container__full">
       <div class="container__flex">
         <div class="project__card">
-          <h1 class="pink section right">UX/UI DESIGN</h1>
+          <h1 class="pink section right">DISEÑO UX/UI</h1>
           <header>
             <h2 class="playfair">Find the right location with locspot</h2>
           </header>

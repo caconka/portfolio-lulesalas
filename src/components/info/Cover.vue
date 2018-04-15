@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div id="home" class="container">
     <header>
       <h2>¡HOLA! SOY LULE SALAS</h2>
       <h1 class="header--important playfair">
@@ -8,7 +8,9 @@
       </h1>
     </header>
     <section class="anchors">
-      <a class="a__myself" href="">¿QUIERES SABER MÁS SOBRE MÍ?</a>
+      <a class="a__myself" href="#" v-scroll-to="{el:'#tastes', offset: - 72}">
+        ¿QUIERES SABER MÁS SOBRE MÍ?
+      </a>
       <ul>
         <li class="linkedin"
             @click="goto('https://www.linkedin.com/in/luciasalascobos/')">
