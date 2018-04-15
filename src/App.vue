@@ -7,16 +7,16 @@
 </template>
 
 <script>
-import NavBar from './components/misc/NavBar';
-import Footer from './components/misc/Footer';
+  import NavBar from './components/misc/NavBar';
+  import Footer from './components/misc/Footer';
 
-export default {
-  name: 'App',
-  components: {
-    'app-navbar': NavBar,
-    'app-footer': Footer
+  export default {
+    name: 'App',
+    components: {
+      'app-navbar': NavBar,
+      'app-footer': Footer
+    }
   }
-}
 </script>
 
 <style src="./styles.css"></style>

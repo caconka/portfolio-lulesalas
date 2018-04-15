@@ -10,10 +10,18 @@
     <section class="anchors">
       <a class="a__myself" href="">¿QUIERES SABER MÁS SOBRE MÍ?</a>
       <ul>
-        <li class="linkedin"></li>
-        <li class="medium"></li>
-        <li class="behance"></li>
-        <li class="instagram"></li>
+        <li class="linkedin"
+            @click="goto('https://www.linkedin.com/in/luciasalascobos/')">
+        </li>
+        <li class="medium"
+            @click="goto('https://medium.com/@lule_salas')">
+        </li>
+        <li class="behance"
+            @click="goto('https://www.behance.net/luciasalasf498')">
+        </li>
+        <li class="instagram"
+            @click="goto('https://www.instagram.com/_uke_lule/')">
+        </li>
       </ul>
     </section>
     <div class="arrows">
@@ -24,9 +32,12 @@
 </template>
 
 <script>
-export default {
-  name: 'Cover'
-}
+  export default {
+    name: 'Cover',
+    methods: {
+      goto: (link) => window.open(link)
+    }
+  }
 </script>
 
 <style scoped>
@@ -90,6 +101,11 @@ export default {
 
   .anchors li:hover {
     cursor: pointer;
+  }
+
+  .linkedin a {
+    height: 100%;
+    width: 100%;
   }
 
   .linkedin {
