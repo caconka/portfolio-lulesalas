@@ -2,7 +2,7 @@
   <div class="container">
     <header>
       <h2>¡HOLA! SOY LULE SALAS</h2>
-      <h1>
+      <h1 class="header--important playfair">
         Arquitecta &amp; <strong>Diseñadora UX/UI</strong><br/>
         afincada en Madrid
       </h1>
@@ -31,23 +31,16 @@ export default {
 
 <style scoped>
   .container {
-    height: calc(100vh - var(--navbarHeight));
     margin-top: var(--navbarHeight);
   }
 
   header {
-    margin-top: 35vh;
+    padding-top: 24vh;
   }
 
   h1,
   h2 {
     margin: 0;
-  }
-
-  header > h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3em;
-    font-weight: lighter;
   }
 
   header > h2 {

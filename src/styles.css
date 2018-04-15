@@ -6,11 +6,13 @@
   --gold: #e8d7bc;
   --pink: #edbcb2;
   --gray: #9b9b9b;
+  --lightGray: #cdcdcd;
   --black: #333;
   --white: #ffffff;
 
   --maxWidth: 1060px;
   --navbarHeight: 4.5em;
+  --screenHeight: calc(100vh - 4.5em);
 }
 
 /* GENERIC */
@@ -28,11 +30,26 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 .container {
+  height: var(--screenHeight);
   max-width: var(--maxWidth);
   margin: 0 auto;
+}
+
+.header--important {
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
 }
 
 /* COLORS */

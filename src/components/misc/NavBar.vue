@@ -3,7 +3,9 @@
     <nav class="container">
       <div class="logo">
         <img src="@/assets/flash-on.svg" class="icon__flash" alt="flash icon">
-        <span class="lule">lulesalas<span class="pink dot">.</span></span>
+        <span class="lule playfair">
+          lulesalas<span class="pink dot">.</span>
+        </span>
       </div>
       <div class="buttons">
         <a href="">Diseño UX/UI</a>
@@ -36,6 +38,7 @@ export default {
     margin: 0 auto;
     position: fixed;
     width: var(--maxWidth);
+    z-index: 9;
   }
 
   a {
@@ -57,10 +60,6 @@ export default {
   .btn {
     margin-top: 3px;
     margin-bottom: 3px;
-  }
-
-  .btn:hover {
-    font-weight: bold;
   }
 
   .buttons a:not(.btn):after,
@@ -87,7 +86,6 @@ export default {
   }
 
   .lule {
-    font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-size: 1.8em;
   }
