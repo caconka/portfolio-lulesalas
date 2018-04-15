@@ -13,6 +13,7 @@
   --maxWidth: 1060px;
   --navbarHeight: 4.5em;
   --screenHeight: calc(100vh - 4.5em);
+  --bgCardsHeight: 424px;
 }
 
 /* GENERIC */

@@ -1,18 +1,20 @@
 <template>
   <div class="navbar">
-    <nav class="container">
-      <div class="logo">
-        <img src="@/assets/flash-on.svg" class="icon__flash" alt="flash icon">
-        <span class="lule playfair">
-          lulesalas<span class="pink dot">.</span>
-        </span>
-      </div>
-      <div class="buttons">
-        <a href="">Diseño UX/UI</a>
-        <a href="">Arquitectura</a>
-        <a href="" class="btn bgBlack">Contacto</a>
-      </div>
-    </nav>
+    <!-- <div class="full-width"> -->
+      <nav>
+        <div class="logo">
+          <img src="@/assets/flash-on.svg" class="icon__flash" alt="flash icon">
+          <span class="lule playfair">
+            lulesalas<span class="pink dot">.</span>
+          </span>
+        </div>
+        <div class="buttons">
+          <a href="">Diseño UX/UI</a>
+          <a href="">Arquitectura</a>
+          <a href="" class="btn bgBlack">Contacto</a>
+        </div>
+      </nav>
+    <!-- </div> -->
   </div>
 </template>
 
@@ -28,17 +30,19 @@
   .navbar {
     display: flex;
     justify-content: center;
+    background-color: #fff;
+    height: var(--navbarHeight);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
   }
 
   nav {
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
-    height: var(--navbarHeight);
     margin: 0 auto;
-    position: fixed;
     width: var(--maxWidth);
-    z-index: 9;
   }
 
   a {

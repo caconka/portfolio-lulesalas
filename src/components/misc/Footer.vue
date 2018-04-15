@@ -1,5 +1,5 @@
 <template>
-  <p>caracola</p>
+  <p>footer</p>
 </template>
 
 <script>
