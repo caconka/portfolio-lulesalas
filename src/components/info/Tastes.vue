@@ -116,7 +116,7 @@ export default {
   }
 
   .description__list li:nth-last-child(1) {
-    margin-bottom: 3em;
+    margin-bottom: 8vh;
   }
 
   .values {
