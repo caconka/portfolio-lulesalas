@@ -1,27 +1,19 @@
 <template>
   <div class="container">
     <header>
-      <h2>HOLA! SOY LULE SALAS</h2>
+      <h2>¡HOLA! SOY LULE SALAS</h2>
       <h1>
         Arquitecta &amp; <strong>Diseñadora UX/UI</strong><br/>
         afincada en Madrid
       </h1>
     </header>
     <section class="anchors">
-      <a class="a__myself" href="">¿QUIERES SABER MÁS SOBRE MI?</a>
+      <a class="a__myself" href="">¿QUIERES SABER MÁS SOBRE MÍ?</a>
       <ul>
-        <li>
-          <a href=""><img src="@/assets/linkedin.svg" alt="linkedin logo"></a>
-        </li>
-        <li>
-          <a href=""><img src="@/assets/medium.svg" alt="medium logo"></a>
-        </li>
-        <li>
-          <a href=""><img src="@/assets/behance.svg" alt="behance logo"></a>
-        </li>
-        <li>
-          <a href=""><img src="@/assets/instagram.svg" alt="instagram logo"></a>
-        </li>
+        <li class="linkedin"></li>
+        <li class="medium"></li>
+        <li class="behance"></li>
+        <li class="instagram"></li>
       </ul>
     </section>
     <div class="arrows">
@@ -43,7 +35,7 @@ export default {
   }
 
   header {
-    margin-top: 40vh;
+    margin-top: 35vh;
   }
 
   h1,
@@ -59,6 +51,7 @@ export default {
 
   header > h2 {
     color: var(--pink);
+    font-weight: 400;
   }
 
   strong {
@@ -71,9 +64,18 @@ export default {
     justify-content: space-between;
   }
 
-  .a__myself {
-    padding-bottom: 0.5em;
-    box-shadow: inset 0 -0.12em var(--pink);
+  .a__myself:after {
+    box-shadow: inset 0 -0.12em var(--gold);
+    content: '';
+    display: block;
+    height: 0.4em;
+    margin: 0 auto;
+    transition: width 0.2s ease-out;
+    width: 95%;
+  }
+
+  .a__myself:hover:after {
+    width: 0%;
   }
 
   .anchors ul {
@@ -81,17 +83,57 @@ export default {
   }
 
   ul li:not(:nth-child(1)) {
-    margin-top: .6em;
+    margin-top: 0.8em;
     max-height: 1em;
   }
 
-  .anchors li img {
+  .anchors li {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1em;
     width: 1em;
   }
 
+  .anchors li:hover {
+    cursor: pointer;
+  }
+
+  .linkedin {
+    background-image: url('../../assets/linkedin.svg');
+  }
+
+  .linkedin:hover {
+    background-image: url('../../assets/linkedin-pink.svg');
+  }
+
+  .medium {
+    background-image: url('../../assets/medium.svg');
+  }
+
+  .medium:hover {
+    background-image: url('../../assets/medium-pink.svg');
+  }
+
+  .behance {
+    background-image: url('../../assets/behance.svg');
+  }
+
+  .behance:hover {
+    background-image: url('../../assets/behance-pink.svg');
+  }
+
+  .instagram {
+    background-image: url('../../assets/instagram.svg');
+  }
+
+  .instagram:hover {
+    background-image: url('../../assets/instagram-pink.svg');
+  }
+
   .arrows {
+    align-items: flex-end;
     display: flex;
-    align-items: center;
+    height: calc(60vh - 15em);
     justify-content: center;
   }
 
