@@ -65,6 +65,7 @@ export default {
 
   .buttons a:not(.btn):after,
   .buttons a:not(.btn):before {
+    box-shadow: inset 0 -0.12em var(--gold);
     content: '';
     display: block;
     height: 3px;
@@ -74,7 +75,6 @@ export default {
 
   a:not(.btn):hover:after {
     width: 100%;
-    box-shadow: inset 0 -0.12em var(--gold);
   }
 
   .icon__flash {
