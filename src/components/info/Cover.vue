@@ -17,7 +17,8 @@
       </ul>
     </section>
     <div class="arrows">
-      <img src="@/assets/down-arrow.svg" alt="down arrows">
+      <img src="@/assets/down-arrow.svg" alt="down arrow">
+      <img src="@/assets/down-arrow.svg" alt="down arrow">
     </div>
   </div>
 </template>
@@ -131,13 +132,35 @@ export default {
   }
 
   .arrows {
-    align-items: flex-end;
+    align-items: center;
     display: flex;
+    flex-direction: column;
     height: calc(60vh - 15em);
-    justify-content: center;
+    justify-content: flex-end;
+  }
+
+  @keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
   }
 
   .arrows img {
+    margin-top: -0.2em;
     width: 1.5em;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+
+  .arrows img:nth-child(2) {
+    animation-delay: 0.2s;
   }
 </style>

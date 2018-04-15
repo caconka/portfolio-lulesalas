@@ -59,6 +59,10 @@ export default {
     margin-bottom: 3px;
   }
 
+  .btn:hover {
+    font-weight: bold;
+  }
+
   .buttons a:not(.btn):after,
   .buttons a:not(.btn):before {
     content: '';
