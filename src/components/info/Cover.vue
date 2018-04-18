@@ -8,7 +8,7 @@
       </h1>
     </header>
     <section class="anchors">
-      <a class="a__myself" href="#" v-scroll-to="{el:'#tastes', offset: - 72}">
+      <a class="a__myself" href="#" v-scroll-to="{el: '#tastes', offset: - 72}">
         ¿QUIERES SABER MÁS SOBRE MÍ?
       </a>
       <ul>
@@ -27,8 +27,14 @@
       </ul>
     </section>
     <div class="arrows">
-      <img src="@/assets/down-arrow.svg" alt="down arrow">
-      <img src="@/assets/down-arrow.svg" alt="down arrow">
+      <img
+        src="@/assets/down-arrow.svg" v-scroll-to="{el: '#tastes', offset: -72}"
+        alt="down arrow"
+      >
+      <img
+        src="@/assets/down-arrow.svg" v-scroll-to="{el: '#tastes', offset: -72}"
+        alt="down arrow"
+      >
     </div>
   </div>
 </template>
@@ -148,6 +154,10 @@
     flex-direction: column;
     height: calc(60vh - 15em);
     justify-content: flex-end;
+  }
+
+  .arrows > img:hover {
+    cursor: pointer;
   }
 
   @keyframes blink {

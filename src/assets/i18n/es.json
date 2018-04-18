@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "locspot": {
+      "name": "Locspot",
+      "type": "DISEÑO UX/UI",
+      "title": "Find the right location with locspot",
+      "description": "Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y",
+      "images": {
+        "basic": "https://mockuphone.com/static/images/devices/apple-iphone6-gold-portrait.png"
+      }
+    },
+    "yingyangyumm": {
+      "name": "Ying Yang Yumm",
+      "type": "DISEÑO UX/UI",
+      "title": "Eat more healthy with ying yang yumm",
+      "description": "Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y",
+      "images": {
+        "basic": "@/assets/mock-locspot.png"
+      }
+    }
+  }
+}

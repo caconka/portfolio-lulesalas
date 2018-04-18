@@ -1,44 +1,46 @@
 <template>
   <div>
-    <div class="container__full--left container__full">
+    <div
+      class="container__full"
+      :class="index % 2 === 0
+        ? 'container__full--left'
+        : 'container__full--right'"
+    >
       <div class="container__flex">
-        <div class="proyect__image">
-          <img src="@/assets/mock-locspot.png" alt="">
+        <div
+          class="proyect__image"
+          v-if="index % 2 === 0"
+        >
+        <img
+          :src="$t(`projects.${project}.images.basic`)"
+          alt="Project photo"
+        >
         </div>
         <div class="project__card">
-          <h1 class="pink section">DISEÑO UX/UI</h1>
+          <h1
+            class="pink section"
+            :class="index % 2 === 0 ? '' : 'right'"
+          >
+            {{$t(`projects.${project}.type`)}}
+          </h1>
           <header>
-            <h2 class="playfair">Find the right location with locspot</h2>
+            <h2 class="playfair">{{$t(`projects.${project}.title`)}}</h2>
           </header>
           <section>
-            <p class="gray">
-              Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y
-            </p>
+            <p class="gray">{{$t(`projects.${project}.description`)}}</p>
           </section>
-          <footer class="right">
+          <footer :class="index % 2 === 0 ? 'right' : ''">
             <a href="" class="btn bgBlack">ver proyecto ______</a>
           </footer>
         </div>
-      </div>
-    </div>
-    <div class="container__full--right container__full">
-      <div class="container__flex">
-        <div class="project__card">
-          <h1 class="pink section right">DISEÑO UX/UI</h1>
-          <header>
-            <h2 class="playfair">Find the right location with locspot</h2>
-          </header>
-          <section>
-            <p class="gray">
-              Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y
-            </p>
-          </section>
-          <footer>
-            <a href="" class="btn bgBlack">ver proyecto ______</a>
-          </footer>
-        </div>
-        <div class="proyect__image">
-          <img src="@/assets/mock-locspot.png" alt="">
+        <div
+          class="proyect__image"
+          v-if="index % 2 !== 0"
+        >
+          <img
+            :src="$t(`projects.${project}.images.basic`)"
+            alt="Project photo"
+          >
         </div>
       </div>
     </div>
@@ -47,7 +49,8 @@
 
 <script>
   export default {
-    name: 'ProjectBasic'
+    name: 'ProjectBasic',
+    props: ['project', 'index']
   }
 </script>
 

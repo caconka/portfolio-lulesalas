@@ -5,7 +5,13 @@
       <h2 id="uxui" class="playfair">Proyectos</h2>
     </header>
     <section>
-      <app-project-basic></app-project-basic>
+      <app-project-basic
+        v-for="(project, index) in projects"
+        :index="index"
+        :project="project"
+        :key="project"
+      >
+      </app-project-basic>
     </section>
   </div>
 </template>
@@ -13,10 +19,17 @@
 <script>
 import ProjectBasic from './Project-basic';
 
+const data = {
+  projects: ['locspot', 'yingyangyumm']
+}
+
 export default {
   name: 'ProjectList',
   components: {
     'app-project-basic': ProjectBasic
+  },
+  data() {
+    return data;
   }
 }
 </script>
