@@ -2,7 +2,7 @@
   <div class="navbar">
     <nav>
       <div class="logo" v-scroll-to="{el:'#home', offset: - 72}">
-        <img src="@/assets/flash-on.svg" class="icon__flash" alt="flash icon">
+        <img src="@/assets/img/flash-on.svg" class="icon__flash" alt="flash icon">
         <span class="lule playfair">
           lulesalas<span class="pink dot">.</span>
         </span>

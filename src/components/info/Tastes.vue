@@ -27,13 +27,13 @@
     </section>
     <section class="values">
       <div class="card__img">
-        <img src="@/assets/value1.png" alt="motivación">
+        <img src="@/assets/img/value1.png" alt="motivación">
       </div>
       <div class="card__img">
-        <img src="@/assets/value2.png" alt="trabajo en equipo">
+        <img src="@/assets/img/value2.png" alt="trabajo en equipo">
       </div>
       <div class="card__img">
-        <img src="@/assets/value3.png" alt="aprendizaje continuo">
+        <img src="@/assets/img/value3.png" alt="aprendizaje continuo">
       </div>
       <div>
         <header>
@@ -100,7 +100,7 @@ export default {
   }
 
   .description__list li:before {
-    background-image: url('../../assets/flash-on.svg');
+    background-image: url('../../assets/img/flash-on.svg');
     background-size: contain;
     background-repeat: no-repeat;
     content: '';

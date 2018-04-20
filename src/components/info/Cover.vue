@@ -28,11 +28,11 @@
     </section>
     <div class="arrows">
       <img
-        src="@/assets/down-arrow.svg" v-scroll-to="{el: '#tastes', offset: -72}"
+        src="@/assets/img/down-arrow.svg" v-scroll-to="{el: '#tastes', offset: -72}"
         alt="down arrow"
       >
       <img
-        src="@/assets/down-arrow.svg" v-scroll-to="{el: '#tastes', offset: -72}"
+        src="@/assets/img/down-arrow.svg" v-scroll-to="{el: '#tastes', offset: -72}"
         alt="down arrow"
       >
     </div>
@@ -117,35 +117,35 @@
   }
 
   .linkedin {
-    background-image: url('../../assets/linkedin.svg');
+    background-image: url('../../assets/img/linkedin.svg');
   }
 
   .linkedin:hover {
-    background-image: url('../../assets/linkedin-pink.svg');
+    background-image: url('../../assets/img/linkedin-pink.svg');
   }
 
   .medium {
-    background-image: url('../../assets/medium.svg');
+    background-image: url('../../assets/img/medium.svg');
   }
 
   .medium:hover {
-    background-image: url('../../assets/medium-pink.svg');
+    background-image: url('../../assets/img/medium-pink.svg');
   }
 
   .behance {
-    background-image: url('../../assets/behance.svg');
+    background-image: url('../../assets/img/behance.svg');
   }
 
   .behance:hover {
-    background-image: url('../../assets/behance-pink.svg');
+    background-image: url('../../assets/img/behance-pink.svg');
   }
 
   .instagram {
-    background-image: url('../../assets/instagram.svg');
+    background-image: url('../../assets/img/instagram.svg');
   }
 
   .instagram:hover {
-    background-image: url('../../assets/instagram-pink.svg');
+    background-image: url('../../assets/img/instagram-pink.svg');
   }
 
   .arrows {

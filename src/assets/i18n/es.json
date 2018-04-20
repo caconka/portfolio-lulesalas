@@ -6,7 +6,7 @@
       "title": "Find the right location with locspot",
       "description": "Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y",
       "images": {
-        "basic": "https://mockuphone.com/static/images/devices/apple-iphone6-gold-portrait.png"
+        "basic": "https://dl.dropboxusercontent.com/s/8zdb6kz9ureavuu/mock-locspot.png?dl=0"
       }
     },
     "yingyangyumm": {
@@ -15,8 +15,33 @@
       "title": "Eat more healthy with ying yang yumm",
       "description": "Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y",
       "images": {
-        "basic": "@/assets/mock-locspot.png"
+        "basic": "https://dl.dropboxusercontent.com/s/8zdb6kz9ureavuu/mock-locspot.png?dl=0"
+      }
+    },
+    "clinicum": {
+      "name": "Clínica alpina",
+      "type": "ARQUITECTURA",
+      "title": "Eat more healthy with ying yang yumm",
+      "description": "Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y",
+      "images": {
+        "basic": "https://dl.dropboxusercontent.com/s/ymsqt2vha34vg2h/dorf12.png?dl=0"
+      }
+    },
+    "panificadora": {
+      "name": "La panificadora",
+      "type": "ARQUITECTURA",
+      "title": "Eat more healthy with ying yang yumm",
+      "description": "Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y",
+      "images": {
+        "basic": "https://dl.dropboxusercontent.com/s/r2wqmhpr9l10p24/vigo06.jpg?dl=0"
       }
     }
+  },
+  "contact": {
+    "name": "CONTACTO",
+    "title": "¿Quieres hablar conmigo?",
+    "description": "Me encantan los desafíos, los nuevos retos y ¡siempre estoy preparada para escuchar nuevas propuestas! ¿tienes un proyecto?, ¿un idea?, ¿algo interesante que contar?",
+    "contact": "Escríbeme a",
+    "mail": "luciasalascobos@gmail.com"
   }
 }

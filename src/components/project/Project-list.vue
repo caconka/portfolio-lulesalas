@@ -20,7 +20,7 @@
 import ProjectBasic from './Project-basic';
 
 const data = {
-  projects: ['locspot', 'yingyangyumm']
+  projects: ['locspot', 'yingyangyumm', 'panificadora', 'clinicum']
 }
 
 export default {
