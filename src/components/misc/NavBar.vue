@@ -11,8 +11,14 @@
         <a href="#" v-scroll-to="{el: '#uxui', offset: - 72}">
           {{$t('navbar.uxui')}}
         </a>
-        <a href="#contact" class="btn bgBlack">{{$t('navbar.contact')}}</a>
         <a href="#" v-scroll-to="'#architecture'">{{$t('navbar.architect')}}</a>
+        <a 
+          v-scroll-to="'#contact'"
+          href="#contact" 
+          class="btn bgBlack"
+        >
+          {{$t('navbar.contact')}}
+        </a>
       </div>
     </nav>
   </div>

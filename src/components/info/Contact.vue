@@ -1,5 +1,5 @@
 <template>
-  <div class="container__card">
+  <div id="contact" class="container__card">
     <section class="card">
       <header>
         <h2 class="pink">{{$t('contact.name')}}</h2>
