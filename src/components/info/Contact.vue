@@ -10,7 +10,9 @@
       </section>
       <footer>
         <p class="gray">{{$t('contact.contact')}}<br>
-          <span class="black">{{$t('contact.mail')}}</span>
+          <a href="mailto:luciasalascobos@gmail.com">
+            <span class="black">luciasalascobos@gmail.com</span>
+          </a>
         </p>
       </footer>
     </section>
