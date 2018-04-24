@@ -16,7 +16,7 @@ Vue.use(VueI18n);
 
 const i18n = new VueI18n({
   locale: 'es',
-  messages,
+  messages
 })
 
 /* eslint-disable no-new */
@@ -27,3 +27,4 @@ new Vue({
   components: { App },
   template: '<App/>'
 });
+

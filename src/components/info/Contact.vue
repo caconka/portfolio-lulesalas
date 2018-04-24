@@ -39,6 +39,9 @@
 
   h1 {
     font-size: 2em;
+  }
+
+  h2 {
     font-weight: lighter;
   }
 </style>

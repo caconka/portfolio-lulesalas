@@ -30,7 +30,7 @@
             <p class="gray">{{$t(`projects.${project}.description`)}}</p>
           </section>
           <footer :class="index % 2 === 0 ? 'right' : ''">
-            <a href="" class="btn bgBlack">ver proyecto ______</a>
+            <a href="" class="btn bgBlack">Ver proyecto ______</a>
           </footer>
         </div>
       </div>
@@ -75,6 +75,10 @@
 
   .project__card {
     width: var(--proyectCardWidth);
+  }
+
+  .project__card h1 {
+    font-weight: lighter;
   }
 
   .project__image {

@@ -101,3 +101,29 @@ p {
   padding: 0.6em 1.1em;
   transition: 0.5s ease;
 }
+
+.bar {
+  background: var(--gold);
+  border-radius: 1px;
+  height: 4px;
+  width: 15%;
+}
+
+/* ICONS */
+
+.linkedin {
+  background-image: url('assets/img/linkedin.svg');
+}
+
+.medium {
+  background-image: url('assets/img/medium.svg');
+}
+
+.behance {
+  background-image: url('assets/img/behance.svg');
+}
+
+.instagram {
+  background-image: url('assets/img/instagram.svg');
+}
+

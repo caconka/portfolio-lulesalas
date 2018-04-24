@@ -1,27 +1,26 @@
 <template>
-  <div class="container">
+  <div class="container__card">
     <section class="description">
       <h2 id="tastes" class="header--important playfair">
-        Me encanta lo que hago.
+        {{$t('tastes.title')}}
       </h2>
       <div class="bar"></div>
       <ul class="description__list">
         <li class="gray">
-          Me apasiona el diseño en todas sus formas y encontrar
-          <span class="black">soluciones creativas</span> a problemas
-          concretos a través de él.
+          {{$t('tastes.first.one')}}
+          <span class="black">{{$t('tastes.first.two')}}</span>
+          {{$t('tastes.first.three')}}
         </li>
         <li class="gray">
-          Soy amante de los <span class="black">procesos y metodologías
-          </span>, creo que pueden llevarte allí donde nunca hubieras
-          imaginado.
+          {{$t('tastes.second.one')}}
+          <span class="black"> {{$t('tastes.second.two')}}</span>,
+          {{$t('tastes.second.three')}}
         </li>
         <li class="gray">
-          Considero la <span class="black">comunicación y empatía</span>
-          herramientas fundamentales para poder llevar a cabo cualquier proceso
-          con éxito: con el equipo, el cliente y el usuario, pues creo que
-          nunca debe olvidarse qué ni <span class="black">para quién se está
-          diseñando</span>.
+          {{$t('tastes.third.one')}}
+          <span class="black">{{$t('tastes.third.two')}}</span>
+          {{$t('tastes.third.three')}}
+          <span class="black">{{$t('tastes.third.four')}}</span>.
         </li>
       </ul>
     </section>
@@ -37,30 +36,21 @@
       </div>
       <div>
         <header>
-          <h2 class="playfair">motivación</h2>
+          <h2 class="playfair">{{$t('tastes.motivation.title')}}</h2>
         </header>
-        <p class="gray">
-          Creo en la motivación como motor de trabajo, me gusta lo que hago y
-          me gusta hacerlo bien.
-        </p>
+        <p class="gray">{{$t('tastes.motivation.description')}}</p>
       </div>
       <div>
         <header>
-          <h2 class="playfair">trabajo en equipo</h2>
+          <h2 class="playfair">{{$t('tastes.teamwork.title')}}</h2>
         </header>
-        <p class="gray">
-          Escucharse, entenderse, respetarse y complementarse, para trabajar
-          mejor y más agusto.
-        </p>
+        <p class="gray">{{$t('tastes.teamwork.description')}}</p>
       </div>
       <div>
         <header>
-          <h2 class="playfair">aprendizaje continuo</h2>
+          <h2 class="playfair">{{$t('tastes.learning.title')}}</h2>
         </header>
-        <p class="gray">
-          Soy muy aficionada a las charlas, eventos y workshops: te mantienen
-          al día y alimentan la curiosidad que fomenta el crecimiento.
-        </p>
+        <p class="gray">{{$t('tastes.learning.description')}}</p>
       </div>
     </section>
   </div>
@@ -73,6 +63,10 @@ export default {
 </script>
 
 <style scoped>
+  .container__card {
+    margin-bottom: 10em;
+  }
+
   .header--important {
     text-align: center;
   }
@@ -82,16 +76,11 @@ export default {
   }
 
   .header--important {
-    margin-bottom: 0.5em;
-    margin-top: 0;
+    margin: 0;
   }
 
   .bar {
-    background: var(--gold);
-    border-radius: 1px;
-    height: 4px;
-    margin: 0.5em auto 1em auto;
-    width: 12%;
+    margin: .8em auto 2em auto;
   }
 
   .description__list {

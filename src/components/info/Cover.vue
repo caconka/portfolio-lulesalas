@@ -1,15 +1,16 @@
 <template>
   <div id="home" class="container">
     <header>
-      <h2>¡HOLA! SOY LULE SALAS</h2>
+      <h2>{{$t('cover.subtitle')}}</h2>
       <h1 class="header--important playfair">
-        Arquitecta &amp; <strong>Diseñadora UX/UI</strong><br/>
-        afincada en Madrid
+        {{$t('cover.title.one')}} &amp; 
+        <strong>{{$t('cover.title.two')}}</strong><br/>
+        {{$t('cover.title.three')}}
       </h1>
     </header>
     <section class="anchors">
       <a class="a__myself" href="#" v-scroll-to="{el: '#tastes', offset: - 72}">
-        ¿QUIERES SABER MÁS SOBRE MÍ?
+        {{$t('cover.about')}}
       </a>
       <ul>
         <li class="linkedin"
@@ -77,6 +78,10 @@
     justify-content: space-between;
   }
 
+  .a__myself {
+    letter-spacing: .2em;
+  }
+
   .a__myself:after {
     box-shadow: inset 0 -0.12em var(--gold);
     content: '';
@@ -116,32 +121,16 @@
     width: 100%;
   }
 
-  .linkedin {
-    background-image: url('../../assets/img/linkedin.svg');
-  }
-
   .linkedin:hover {
     background-image: url('../../assets/img/linkedin-pink.svg');
-  }
-
-  .medium {
-    background-image: url('../../assets/img/medium.svg');
   }
 
   .medium:hover {
     background-image: url('../../assets/img/medium-pink.svg');
   }
 
-  .behance {
-    background-image: url('../../assets/img/behance.svg');
-  }
-
   .behance:hover {
     background-image: url('../../assets/img/behance-pink.svg');
-  }
-
-  .instagram {
-    background-image: url('../../assets/img/instagram.svg');
   }
 
   .instagram:hover {

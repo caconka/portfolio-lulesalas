@@ -1,8 +1,8 @@
 <template>
   <div class="container__list">
-    <!-- <app-project-basic v-for="project in projects"></app-project-basic> -->
     <header>
-      <h2 id="uxui" class="playfair">Proyectos</h2>
+      <h1 id="uxui" class="playfair">{{$t('projects.title')}}</h1>
+      <div class="bar"></div>
     </header>
     <section>
       <app-project-basic
@@ -43,11 +43,12 @@ export default {
   }
 
   #uxui {
-    margin-top: 0;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 2em;
   }
 
-  .container__list {
-    /* margin-top: 5vh; */
+  .bar {
+    margin: .8em 0 2em auto;
   }
-
 </style>

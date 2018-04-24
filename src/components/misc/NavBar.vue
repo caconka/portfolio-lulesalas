@@ -8,9 +8,11 @@
         </span>
       </div>
       <div class="buttons">
-        <a href="#" v-scroll-to="{el: '#uxui', offset: - 72}">Diseño UX/UI</a>
-        <a href="#" v-scroll-to="'#architecture'">Arquitectura</a>
-        <a href="#contact" class="btn bgBlack">Contacto</a>
+        <a href="#" v-scroll-to="{el: '#uxui', offset: - 72}">
+          {{$t('navbar.uxui')}}
+        </a>
+        <a href="#contact" class="btn bgBlack">{{$t('navbar.contact')}}</a>
+        <a href="#" v-scroll-to="'#architecture'">{{$t('navbar.architect')}}</a>
       </div>
     </nav>
   </div>

@@ -1,5 +1,51 @@
 {
+  "navbar": {
+    "uxui": "Diseño UX/UI",
+    "architect": "Arquitectura",
+    "contact": "Contacto"
+  },
+  "cover": {
+    "title": {
+      "one": "Arquitecta",
+      "two": "Diseñadora UX/UI",
+      "three": "afincada en Madrid"
+    },
+    "subtitle": "¡HOLA! SOY LULE SALAS",
+    "about": "¿QUIERES SABER MÁS SOBRE MÍ?"
+  },
+  "tastes": {
+    "title": "Me encanta lo que hago",
+    "first": {
+      "one": "Me apasiona el diseño en todas sus formas y encontrar",
+      "two": "soluciones creativas",
+      "three": "a problemas concretos a través de él."
+    },
+    "second": {
+      "one": "Soy amante de los",
+      "two": "procesos y metodologías",
+      "three": "creo que pueden llevarte allí donde nunca hubieras imaginado."
+    },
+    "third": {
+      "one": "Considero la",
+      "two": "comunicación y empatía",
+      "three": "herramientas fundamentales para poder llevar a cabo cualquier proceso con éxito: con el equipo, el cliente y el usuario, pues creo que nunca debe olvidarse qué ni",
+      "four": "para quién se está diseñando"
+    },
+    "motivation": {
+      "title": "motivación",
+      "description": "Creo en la motivación como motor de trabajo, me gusta lo que hago y me gusta hacerlo bien."
+    },
+    "teamwork": {
+      "title": "trabajo en equipo",
+      "description": "Escucharse, entenderse, respetarse y complementarse, para trabajar mejor y más agusto"
+    },
+    "learning": {
+      "title": "aprendizaje continuo",
+      "description": "Soy muy aficionada a las charlas, eventos y workshops: te mantienen al día y alimentan la curiosidad que fomenta el crecimiento."
+    }
+  },
   "projects": {
+    "title": "Mis proyectos",
     "locspot": {
       "name": "Locspot",
       "type": "DISEÑO UX/UI",
@@ -43,5 +89,8 @@
     "description": "Me encantan los desafíos, los nuevos retos y ¡siempre estoy preparada para escuchar nuevas propuestas! ¿tienes un proyecto?, ¿un idea?, ¿algo interesante que contar?",
     "contact": "Escríbeme a",
     "mail": "luciasalascobos@gmail.com"
+  },
+  "footer": {
+    "find": "TAMBIÉN PUEDES ENCONTRARME EN"
   }
 }
