@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container__card">
     <section class="card">
       <header>
         <h2 class="pink">{{$t('contact.name')}}</h2>
@@ -24,8 +24,22 @@
 </script>
 
 <style scoped>
+  .container__card {
+    margin-bottom: 8em;
+  }
+
   .card {
     width: 40%;
+  }
+
+  h1,
+  h2 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: lighter;
   }
 </style>
 

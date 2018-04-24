@@ -15,6 +15,7 @@
   --screenHeight: calc(100vh - 4.5em);
   --bgCardsHeight: 424px;
   --proyectCardWidth: 20.9em;
+  --footerHeight: 6em;
 }
 
 /* GENERIC */
@@ -23,6 +24,10 @@ html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: var(--black);
+}
+
+body {
+  margin: 0;
 }
 
 a {
@@ -40,11 +45,16 @@ p {
 }
 
 .body {
-  width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
   height: var(--screenHeight);
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+
+.container__card {
   max-width: var(--maxWidth);
   margin: 0 auto;
 }

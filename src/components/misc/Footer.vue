@@ -1,5 +1,7 @@
 <template>
-  <p>footer</p>
+  <div class="footer">
+
+  </div>
 </template>
 
 <script>
@@ -9,5 +11,8 @@ export default {
 </script>
 
 <style scoped>
-
+  .footer {
+    background: var(--gold);
+    height: var(--footerHeight);
+  }
 </style>
