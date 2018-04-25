@@ -4,11 +4,16 @@
       <img
         src="@/assets/img/background.jpg"
         alt="background"
-        :class="index % 2 === 0 ? 'bg--left' : 'bg--right'"
+        :class="index % 2 === 0 ? 'bg--left bg__' + project : 'bg--right bg__' + project"
       >
       <div
         :class="index % 2 === 0 ? 'container__flex' : 'container__flex reverse'"
       >
+        <div class="section__mobile">
+          <h4 class="pink">
+            {{$t(`projects.${project}.type`)}}
+          </h4>
+        </div>
         <div class="project__image">
           <img
             :class="project"
@@ -103,6 +108,10 @@
     margin-top: 3vh;
   }
 
+  .section__mobile {
+    display: none;
+  }
+
   header h2 {
     font-size: 1.7em;
   }
@@ -121,5 +130,71 @@
 
   footer {
     margin-top: 4em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container__full {
+      width: 100%;
+    }
+
+    .container__flex {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .bg--left,
+    .bg--right {
+      height: 60vw;
+      padding-top: 3.5em;
+    }
+
+    .arch {
+      height: 156px;
+    }
+
+    .project__image {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .project__image img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section__mobile {
+      display: block;
+      text-align: right;
+      width: 80%;
+    }
+
+    .section__mobile h4 {
+      margin: 0 0 .2em 0;
+    }
+
+    .project__card {
+      margin-top: 1em;
+    }
+
+    .project__card h2 {
+      font-size: 1.3em;
+    }
+
+    .project__card footer {
+      text-align: right;
+    }
+
+    .bg__clinicum,
+    .bg__panificadora {
+      height: 41vw;
+    }
+
+    .clinicum {
+      transform: translateX(10%);
+    }
   }
 </style>

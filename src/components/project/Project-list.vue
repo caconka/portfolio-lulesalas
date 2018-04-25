@@ -51,4 +51,10 @@ export default {
   .bar {
     margin: .8em 0 2em auto;
   }
+
+  @media only screen and (max-width: 600px) {
+    #uxui {
+      font-size: 1.3em;
+    }
+  }
 </style>
