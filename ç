@@ -11,7 +11,7 @@
   --white: #ffffff;
 
   --navbarHeight: 4.5em;
-  --screenHeight: calc(100vh - var(--navbarHeight));
+  --screenHeight: calc(100vh - 4.5em);
   --bgCardsHeight: 424px;
   --proyectCardWidth: 20.9em;
   --footerHeight: 6em;
@@ -128,40 +128,9 @@ p {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 600px) {
-  :root {
-    --maxWidth: 90%;
-    --navbarHeight: 4em;
-  }
-
-  html {
-    font-size: 13px;
-  }
-
-  .header--important {
-    font-size: 1.7em;
-  }
-
-  h2 {
-    font-size: 1.3em;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  :root {
-    --maxWidth: 580px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  :root {
-    --maxWidth: 768px;
-  }
-}
-
 @media only screen and (min-width: 992px) {
   :root {
-    --maxWidth: 960px;
+    --maxWidth: 920px;
   }
 }
 

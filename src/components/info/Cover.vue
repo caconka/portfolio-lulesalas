@@ -102,7 +102,6 @@
 
   ul li:not(:nth-child(1)) {
     margin-top: 0.8em;
-    max-height: 1em;
   }
 
   .anchors li {
@@ -172,5 +171,39 @@
 
   .arrows img:nth-child(2) {
     animation-delay: 0.2s;
+  }
+
+  @media only screen and (max-width: 600px) {
+    header {
+      padding-top: 35%;
+    }
+
+    .anchors {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 48%;
+    }
+
+    .anchors a {
+      margin: 4em 0 2em 0;
+    }
+
+    .anchors ul {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .anchors ul li {
+      height: 1.3em;
+      width: 1.3em;
+      margin-bottom: .5em;
+    }
+
+    .arrows {
+      height: 10%;
+    }
   }
 </style>
