@@ -25,28 +25,28 @@
       </ul>
     </section>
     <section class="values">
-      <div class="card__img">
-        <img src="@/assets/img/value1.png" alt="motivación">
-      </div>
-      <div class="card__img">
-        <img src="@/assets/img/value2.png" alt="trabajo en equipo">
-      </div>
-      <div class="card__img">
-        <img src="@/assets/img/value3.png" alt="aprendizaje continuo">
-      </div>
-      <div>
+      <div class="value__container">
+        <div class="card__img">
+          <img src="@/assets/img/value1.png" alt="motivación">
+        </div>
         <header>
           <h2 class="playfair">{{$t('tastes.motivation.title')}}</h2>
         </header>
         <p class="gray">{{$t('tastes.motivation.description')}}</p>
       </div>
-      <div>
+      <div class="value__container">
+        <div class="card__img">
+          <img src="@/assets/img/value2.png" alt="trabajo en equipo">
+        </div>
         <header>
           <h2 class="playfair">{{$t('tastes.teamwork.title')}}</h2>
         </header>
         <p class="gray">{{$t('tastes.teamwork.description')}}</p>
       </div>
-      <div>
+      <div class="value__container">
+        <div class="card__img">
+          <img src="@/assets/img/value3.png" alt="aprendizaje continuo">
+        </div>
         <header>
           <h2 class="playfair">{{$t('tastes.learning.title')}}</h2>
         </header>
@@ -125,5 +125,25 @@ export default {
   .card__img {
     margin-top: 2em;
     height: 5em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .values {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .value__container {
+      width: 80%;
+    }
+
+    .card__img img {
+      height: 90%;
+    }
+
+    .value__container h2 {
+      font-size: 1.3em;
+    }
   }
 </style>

@@ -136,6 +136,7 @@ p {
 
   html {
     font-size: 13px;
+    overflow-x: hidden;
   }
 
   .header--important {
