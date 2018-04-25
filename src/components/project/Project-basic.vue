@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div
-      class="container__full"
-      :class="index % 2 === 0
-        ? 'container__full--left'
-        : 'container__full--right'"
-    >
+    <div class="container__full">
+      <img
+        src="@/assets/img/background.jpg"
+        alt="background"
+        :class="index % 2 === 0 ? 'bg--left' : 'bg--right'"
+      >
       <div
         :class="index % 2 === 0 ? 'container__flex' : 'container__flex reverse'"
       >
@@ -55,12 +55,21 @@
     height: var(--bgCardsHeight);
   }
 
-  .container__full--left {
-    background-image: url('../../assets/img/bg-left.png');
+  .bg--left,
+  .bg--right {
+    height: 354px;
+    position: absolute;
+    padding-top: 3em;
+    width: calc(799px + (100% - 1000px) / 2);
+    z-index: -999;
   }
 
-  .container__full--right {
-    background-image: url('../../assets/img/bg-right.png');
+  .bg--left {
+    left: 0;
+  }
+
+  .bg--right {
+    right: 0;
   }
 
   .container__flex {
