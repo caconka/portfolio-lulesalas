@@ -132,6 +132,7 @@ p {
   :root {
     --maxWidth: 90%;
     --navbarHeight: 4em;
+    --footerHeight: 5em;
   }
 
   html {

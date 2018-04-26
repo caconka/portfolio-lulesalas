@@ -46,5 +46,11 @@
   h2 {
     font-weight: lighter;
   }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  }
 </style>
 

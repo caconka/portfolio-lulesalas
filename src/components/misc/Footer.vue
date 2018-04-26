@@ -66,4 +66,22 @@
   .links li:hover {
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 600px) {
+    .links ul {
+      display: block;
+      text-align: right;
+      margin: .5em 0;
+    }
+
+    .links li {
+      height: 1.3em;
+      width: 1.3em;
+    }
+
+    .links span {
+      letter-spacing: .1em;
+      margin-right: 0;
+    }
+  }
 </style>
