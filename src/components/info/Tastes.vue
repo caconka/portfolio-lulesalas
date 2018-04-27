@@ -146,4 +146,14 @@ export default {
       font-size: 1.3em;
     }
   }
+
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .value__container h2 {
+      font-size: 1.3em;
+    }
+
+    .value__container p {
+      font-size: .85em;
+    }
+  }
 </style>

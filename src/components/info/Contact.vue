@@ -52,5 +52,11 @@
       width: 100%;
     }
   }
+
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .card {
+      width: 70%;
+    }
+  }
 </style>
 

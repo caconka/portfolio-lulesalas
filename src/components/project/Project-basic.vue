@@ -198,4 +198,38 @@
       transform: translateX(10%);
     }
   }
+
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .project__card h2 {
+      font-size: 1.5em;
+    }
+
+    .project__card {
+      width: 40%;
+    }
+
+    .container__full {
+      margin-bottom: 5.5em;
+    }
+
+    .container__full .bg--left,
+    .container__full .bg--right {
+      width: 80%;
+      height: 20em;
+    }
+
+    .project__image img {
+      width: 60vw;
+    }
+
+    .project__image .yingyangyumm,
+    .project__image .locspot {
+      width: 94%;
+    }
+
+    .project__image .clinicum,
+    .project__image .yingyangyumm {
+      transform: translateX(2em);
+    }
+  }
 </style>
