@@ -129,15 +129,8 @@ p {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 600px) {
-  :root {
-    --maxWidth: 90%;
-    --navbarHeight: 4em;
-    --footerHeight: 5em;
-  }
-
   html {
     font-size: 13px;
-    overflow-x: hidden;
   }
 
   .header--important {
@@ -153,9 +146,27 @@ p {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 768px){
   :root {
-    --maxWidth: 580px;
+    --maxWidth: 90%;
+    --navbarHeight: 4em;
+    --footerHeight: 5em;
+  }
+
+  html {
+    font-size: 15px;
+  }
+
+  .header--important {
+    font-size: 1.9em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .bar {
+    height: 3px;
   }
 }
 

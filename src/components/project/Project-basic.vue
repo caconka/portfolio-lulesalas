@@ -142,8 +142,9 @@
       flex-direction: column;
     }
 
-    .bg--left,
-    .bg--right {
+    .container__full .bg--left,
+    .container__full .bg--right {
+      width: 100%;
       height: 60vw;
       padding-top: 3.5em;
     }
@@ -188,8 +189,8 @@
       text-align: right;
     }
 
-    .bg__clinicum,
-    .bg__panificadora {
+    .container__full .bg__clinicum,
+    .container__full .bg__panificadora {
       height: 41vw;
     }
 
