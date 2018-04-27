@@ -135,6 +135,7 @@
   @media only screen and (max-width: 600px) {
     .container__full {
       width: 100%;
+      margin-bottom: 9.5em;
     }
 
     .container__flex {
@@ -199,7 +200,7 @@
     }
   }
 
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
+  @media only screen and (min-width: 600px) and (max-width: 1200px) {
     .project__card h2 {
       font-size: 1.5em;
     }
@@ -214,7 +215,7 @@
 
     .container__full .bg--left,
     .container__full .bg--right {
-      width: 80%;
+      width: 68%;
       height: 20em;
     }
 

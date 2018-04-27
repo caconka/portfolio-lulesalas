@@ -58,7 +58,7 @@ export default {
     }
   }
 
-  @media only screen and (min-width:600px) and (max-width: 768px) {
+  @media only screen and (min-width:600px) and (max-width: 960px) {
     #uxui {
       font-size: 1.5em;
     }

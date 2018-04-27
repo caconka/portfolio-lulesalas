@@ -10,11 +10,10 @@
   --black: #333;
   --white: #ffffff;
 
-  --navbarHeight: 4.5em;
   --screenHeight: calc(100vh - var(--navbarHeight));
-  --bgCardsHeight: 424px;
+  --bgCardsHeight: fit-content;
   --proyectCardWidth: 20.9em;
-  --footerHeight: 6em;
+  --footerHeight: 4em;
 }
 
 /* GENERIC */
@@ -129,6 +128,10 @@ p {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 600px) {
+  :root {
+    --footerHeight: 5em;
+  }
+
   html {
     font-size: 13px;
   }
@@ -146,11 +149,9 @@ p {
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 960px) {
   :root {
-    --maxWidth: 90%;
     --navbarHeight: 4em;
-    --footerHeight: 5em;
   }
 
   html {
@@ -170,21 +171,22 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 960px) {
   :root {
-    --maxWidth: 768px;
+    --navbarHeight: 4.5em;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1200px) {
   :root {
-    --maxWidth: 960px;
+    --maxWidth: 90%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   :root {
     --maxWidth: 1060px;
+    --bgCardsHeight: 414px;
   }
 }
 

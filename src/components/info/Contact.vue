@@ -26,12 +26,16 @@
 </script>
 
 <style scoped>
+  #contact {
+    margin-top: 12em;
+  }
+
   .container__card {
     margin-bottom: 8em;
   }
 
   .card {
-    width: 40%;
+    width: 50%;
   }
 
   h1,
@@ -51,11 +55,25 @@
     .card {
       width: 100%;
     }
+    
+    h1 {
+      font-size: 1.8em;
+    }
+
+    h2 {
+      font-size: 1.6em;
+    }
   }
 
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
+  @media only screen and (min-width: 600px) and (max-width: 960px) {
     .card {
       width: 70%;
+    }
+  }
+
+  @media only screen and (min-width: 960px) and (max-width: 1200px) {
+    .card {
+      width: 61%;
     }
   }
 </style>
