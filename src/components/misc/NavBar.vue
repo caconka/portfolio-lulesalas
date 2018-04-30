@@ -12,18 +12,31 @@
         class="sandwich"
         src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ5MS4zMTgsMjM1LjMxOEgyMC42ODJDOS4yNiwyMzUuMzE4LDAsMjQ0LjU3NywwLDI1NnM5LjI2LDIwLjY4MiwyMC42ODIsMjAuNjgyaDQ3MC42MzYgICAgYzExLjQyMywwLDIwLjY4Mi05LjI1OSwyMC42ODItMjAuNjgyQzUxMiwyNDQuNTc4LDUwMi43NDEsMjM1LjMxOCw0OTEuMzE4LDIzNS4zMTh6IiBmaWxsPSIjMzMzMzMzIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDkxLjMxOCw3OC40MzlIMjAuNjgyQzkuMjYsNzguNDM5LDAsODcuNjk5LDAsOTkuMTIxYzAsMTEuNDIyLDkuMjYsMjAuNjgyLDIwLjY4MiwyMC42ODJoNDcwLjYzNiAgICBjMTEuNDIzLDAsMjAuNjgyLTkuMjYsMjAuNjgyLTIwLjY4MkM1MTIsODcuNjk5LDUwMi43NDEsNzguNDM5LDQ5MS4zMTgsNzguNDM5eiIgZmlsbD0iIzMzMzMzMyIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ5MS4zMTgsMzkyLjE5N0gyMC42ODJDOS4yNiwzOTIuMTk3LDAsNDAxLjQ1NiwwLDQxMi44NzlzOS4yNiwyMC42ODIsMjAuNjgyLDIwLjY4Mmg0NzAuNjM2ICAgIGMxMS40MjMsMCwyMC42ODItOS4yNTksMjAuNjgyLTIwLjY4MlM1MDIuNzQxLDM5Mi4xOTcsNDkxLjMxOCwzOTIuMTk3eiIgZmlsbD0iIzMzMzMzMyIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
       />
-      <div id="buttons">
-        <a href="#" v-scroll-to="{el: '#uxui', offset: - 72}">
-          {{$t('navbar.uxui')}}
-        </a>
-        <a href="#" v-scroll-to="'#architecture'">{{$t('navbar.architect')}}</a>
-        <a
-          v-scroll-to="'#contact'"
-          href="#contact"
-          class="btn bgBlack"
-        >
-          {{$t('navbar.contact')}}
-        </a>
+      <div id="buttons" @click="toggleButtons()">
+        <div class="buttons__container" @click.prevent="toggleButtons">
+          <a
+            href="#"
+            v-scroll-to="{el: '#uxui', offset: - 72}"
+            @click="toggleButtons()"
+          >
+            {{$t('navbar.uxui')}}
+          </a>
+          <a
+            href="#"
+            v-scroll-to="{el: '#architecture', offset: - 100}"
+            @click="toggleButtons()"
+          >
+            {{$t('navbar.architect')}}
+          </a>
+          <a
+            v-scroll-to="'#contact'"
+            href="#contact"
+            class="btn bgBlack"
+            @click="toggleButtons()"
+            >
+            {{$t('navbar.contact')}}
+          </a>
+        </div>
       </div>
     </nav>
   </div>
@@ -35,11 +48,13 @@
     methods: {
       toggleButtons: () => {
         const buttons = document.getElementById('buttons');
-        if (buttons.style.display === 'none') {
-            buttons.style.display = 'flex';
+        const container = document.querySelector('.buttons__container');
+        if (buttons.style.display !== 'flex') {
+          buttons.style.display = 'flex';
         } else {
           buttons.style.display = 'none';
         }
+        setTimeout(() => container.classList.toggle('active'), 100);
       }
     }
   }
@@ -83,6 +98,10 @@
   }
 
   #buttons {
+    height: 100%;
+  }
+
+  .buttons__container {
     text-align: right;
     height: 100%;
     display: flex;
@@ -125,21 +144,45 @@
 
   @media only screen and (max-width: 600px) {
     #buttons {
-      align-items: flex-end;
-      background: white;
+      background: rgba(204, 204, 204, .5);
       display: none;
-      flex-direction: column;
       height: calc(100vh + 2em);
-      justify-content: flex-start;
+      justify-content: flex-end;
       position: absolute;
-      right: 1em;
+      right: 0;
       transform: translateY(3em);
       top: 1em;
-      width: 8em;
+      transition: display .2s ease-out;
+      width: 100vw;
     }
 
-    a {
-      margin: .5em 0;
+    .buttons__container {
+      align-items: flex-end;
+      background: white;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 0 12vw 0 0;
+      transform: translateX(100%);
+      transition: transform .15s ease-out;
+    }
+
+    .active {
+      transform: none;
+    }
+
+    a:not(.btn) {
+      font-size: 1.3em;
+      margin: .5em 0 0 0;
+      padding: .5em 0 .5em 12vw;
+    }
+
+    .a.active {
+      transform: translateX(-6em;)
+    }
+
+    .btn {
+      font-size: 1.3em;
+      margin: 1.2em 0 0 12vw;
     }
 
     .sandwich {

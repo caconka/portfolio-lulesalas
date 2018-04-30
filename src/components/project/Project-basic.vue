@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :id="project === 'panificadora' ? 'architecture' : ''">
     <div class="container__full">
       <img
         src="@/assets/img/background.jpg"
