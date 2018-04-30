@@ -3,6 +3,7 @@
     <section class="card">
       <header>
         <h2 class="pink">{{$t('contact.name')}}</h2>
+        <div class="bar__contact"></div>
         <h1 class="playfair">{{$t('contact.title')}}</h1>
       </header>
       <section>
@@ -35,7 +36,8 @@
   }
 
   .card {
-    width: 50%;
+    width: calc(100% - 9em);
+    margin-left: 9em;
   }
 
   h1,
@@ -48,31 +50,57 @@
   }
 
   h2 {
+    display: inline-block;
     font-weight: lighter;
+    position: absolute;
+    transform: translateX(-6em);
+  }
+
+  .card p {
+    width: 50%;
+  }
+
+  .bar__contact {
+    background: #eee;
+    display: inline-block;
+    height: 2px;
+    margin: 1.2em 0 2em 0;
+    width: 100%;
   }
 
   @media only screen and (max-width: 600px) {
     .card {
       width: 100%;
+      margin-left: 0;
     }
-    
+
+    .card p {
+      width: 100%;
+    }
+
     h1 {
       font-size: 1.8em;
     }
 
     h2 {
       font-size: 1.6em;
+      transform: none;
+    }
+
+    .bar__contact {
+      margin-left: 9em;
+      width: calc(100% - 9em);
     }
   }
 
   @media only screen and (min-width: 600px) and (max-width: 960px) {
-    .card {
+    .card p {
       width: 70%;
     }
   }
 
   @media only screen and (min-width: 960px) and (max-width: 1200px) {
-    .card {
+    .card p {
       width: 61%;
     }
   }
