@@ -52,7 +52,7 @@
         if (buttons.style.display !== 'flex') {
           buttons.style.display = 'flex';
         } else {
-          buttons.style.display = 'none';
+          setTimeout(() => buttons.style.display = 'none', 220);
         }
         setTimeout(() => container.classList.toggle('active'), 100);
       }
@@ -152,7 +152,6 @@
       right: 0;
       transform: translateY(3em);
       top: 1em;
-      transition: display .2s ease-out;
       width: 100vw;
     }
 
