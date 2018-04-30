@@ -51,7 +51,7 @@
         const container = document.querySelector('.buttons__container');
         if (buttons.style.display !== 'flex') {
           buttons.style.display = 'flex';
-        } else {
+        } else if (window.innerWidth < 600) {
           setTimeout(() => buttons.style.display = 'none', 220);
         }
         setTimeout(() => container.classList.toggle('active'), 100);
