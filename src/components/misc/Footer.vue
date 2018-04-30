@@ -63,13 +63,24 @@
     width: 1em;
   }
 
+  .medium,
+  .behance {
+    transform: translateY(2px);
+  }
+
+  .instagram {
+    transform: translateY(1.5px);
+  }
+
   .links li:hover {
     cursor: pointer;
   }
 
   @media only screen and (max-width: 600px) {
     .links ul {
-      display: block;
+      align-items: flex-end;
+      display: flex;
+      justify-content: flex-end;
       text-align: right;
       margin: .5em 0;
     }
@@ -77,6 +88,11 @@
     .links li {
       height: 1.3em;
       width: 1.3em;
+    }
+
+    .medium,
+    .behance {
+      transform: translateY(1.5px);
     }
 
     .links span {
