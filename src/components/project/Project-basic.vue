@@ -35,7 +35,7 @@
             <p class="gray">{{$t(`projects.${project}.description`)}}</p>
           </section>
           <footer :class="index % 2 === 0 ? 'right' : ''">
-            <a href="" class="btn bgBlack">Ver proyecto ______</a>
+            <a :href="$t(`projects.${project}.url`)" class="btn bgBlack">Ver proyecto ______</a>
           </footer>
         </div>
       </div>

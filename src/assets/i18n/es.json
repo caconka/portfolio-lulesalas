@@ -53,7 +53,8 @@
       "description": "Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y",
       "images": {
         "basic": "https://dl.dropboxusercontent.com/s/8zdb6kz9ureavuu/mock-locspot.png?dl=0"
-      }
+      },
+      "url": ""
     },
     "yingyangyumm": {
       "name": "Ying Yang Yumm",
@@ -62,7 +63,8 @@
       "description": "Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y",
       "images": {
         "basic": "https://dl.dropboxusercontent.com/s/58kmeeypcnan87l/yingyangyumm.png?dl=0"
-      }
+      },
+      "url": ""
     },
     "clinicum": {
       "name": "Clínica alpina",
@@ -71,7 +73,8 @@
       "description": "Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y",
       "images": {
         "basic": "https://dl.dropboxusercontent.com/s/ymsqt2vha34vg2h/dorf12.png?dl=0"
-      }
+      },
+      "url": "https://caconka.github.io/portfolio-lsc/es_portfolio/pr_clinicum2.html"
     },
     "panificadora": {
       "name": "La panificadora",
@@ -80,7 +83,8 @@
       "description": "Type something un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y",
       "images": {
         "basic": "https://dl.dropboxusercontent.com/s/r2wqmhpr9l10p24/vigo06.jpg?dl=0"
-      }
+      },
+      "url": "https://caconka.github.io/portfolio-lsc/es_portfolio/pr_panificadora.html"
     }
   },
   "contact": {
