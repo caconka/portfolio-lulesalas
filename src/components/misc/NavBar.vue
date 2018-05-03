@@ -124,7 +124,7 @@
     width: 0%;
   }
 
-  a:not(.btn):hover:after {
+  #buttons a:not(.btn):hover:after {
     width: 100%;
   }
 
