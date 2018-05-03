@@ -30,18 +30,6 @@ export default {
   },
   data() {
     return data;
-  },
-  methods: {
-    handleScroll () {
-      const div = document.querySelector('.bg__clinicum');
-      console.log(window.scrollY + window.innerHeight / 3 > div.offsetTop);
-    }
-  },
-  created () {
-      window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed () {
-      window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>

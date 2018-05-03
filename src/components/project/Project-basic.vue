@@ -35,7 +35,9 @@
             <p class="gray">{{$t(`projects.${project}.description`)}}</p>
           </section>
           <footer :class="index % 2 === 0 ? 'right' : ''">
-            <a :href="$t(`projects.${project}.url`)" class="btn bgBlack">Ver proyecto ______</a>
+            <a :href="$t(`projects.${project}.url`)" class="btn bgBlack">
+              Ver proyecto ______
+            </a>
           </footer>
         </div>
       </div>
@@ -44,9 +46,63 @@
 </template>
 
 <script>
+  function querySelect(selector) {
+    return document.querySelector(selector);
+  }
+
+  const data = {
+    control: []
+  }
+
   export default {
     name: 'ProjectBasic',
-    props: ['project', 'index']
+    props: ['project', 'index'],
+    data () {
+      return data;
+    },
+    methods: {
+      handleScroll () {
+        const bgLocspot = querySelect('.bg__locspot');
+        const bgYingyang = querySelect('.bg__yingyangyumm');
+        const bgPani = querySelect('.bg__panificadora');
+        const bgClinicum = querySelect('.bg__clinicum');
+        const locspot = querySelect('.locspot');
+        const yingyang = querySelect('.yingyangyumm');
+        const pani = querySelect('.panificadora');
+        const clinicum = querySelect('.clinicum');
+        const heightBase = window.scrollY + window.innerHeight / 3;
+        const classNameUx = ' bg__uxui--active';
+        const classNameArch = ' bg__arch--active';
+        const classNameImg = ' img--active';
+
+        if (heightBase > bgLocspot.offsetTop && this.control.length < 1) {
+          this.control.push(1);
+          bgLocspot.className += classNameUx;
+          locspot.className += classNameImg;
+        }
+        if (heightBase > bgYingyang.offsetTop && this.control.length < 2) {
+          this.control.push(2);
+          bgYingyang.className += classNameUx;
+          yingyang.className += classNameImg;
+        }
+        if (heightBase > bgPani.offsetTop && this.control.length < 3) {
+          this.control.push(3);
+          bgPani.className += classNameArch;
+          pani.className += classNameImg;
+        }
+        if (heightBase > bgClinicum.offsetTop && this.control.length < 4) {
+          this.control.push(4);
+          bgClinicum.className += classNameArch;
+          clinicum.className += classNameImg;
+        }
+      }
+    },
+    created () {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed () {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
   }
 </script>
 
@@ -65,6 +121,9 @@
     height: 354px;
     position: absolute;
     padding-top: 3em;
+    opacity: 0;
+    transition: all .8s ease;
+    width: 0;
     z-index: -999;
   }
 
@@ -76,13 +135,13 @@
     right: 0;
   }
 
-  .bg__locspot,
-  .bg__yingyangyumm {
+  .bg__uxui--active {
+    opacity: 1;
     width: calc(799px + (100% - 1000px) / 2);
   }
 
-  .bg__clinicum,
-  .bg__panificadora {
+  .bg__arch--active {
+    opacity: 1;
     width: calc(811px + (100% - 1000px) / 2);
   }
 
@@ -110,6 +169,12 @@
 
   .project__image img {
     max-height: 88%;
+    opacity: 0;
+    transition: all .8s ease;
+  }
+
+  .project__image .img--active {
+    opacity: 1;
   }
 
   .img__ying {
