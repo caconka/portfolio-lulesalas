@@ -14,7 +14,7 @@
             {{$t(`projects.${project}.type`)}}
           </h4>
         </div>
-        <div class="project__image">
+        <div class="project__image" :class="index === 1 ? 'img__ying' : ''">
           <img
             :class="project"
             :src="$t(`projects.${project}.images.basic`)"
@@ -101,6 +101,10 @@
 
   .project__image img {
     max-height: 88%;
+  }
+
+  .img__ying {
+    text-align: right;
   }
 
   .section {
