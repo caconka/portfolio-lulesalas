@@ -54,8 +54,8 @@
   .container__full {
     display: flex;
     justify-content: center;
-    margin-bottom: 12.5em;
     background-repeat: no-repeat;
+    margin-bottom: 12.5em;
     background-size: cover;
     height: var(--bgCardsHeight);
   }
@@ -65,7 +65,6 @@
     height: 354px;
     position: absolute;
     padding-top: 3em;
-    width: calc(799px + (100% - 1000px) / 2);
     z-index: -999;
   }
 
@@ -75,6 +74,16 @@
 
   .bg--right {
     right: 0;
+  }
+
+  .bg__locspot,
+  .bg__yingyangyumm {
+    width: calc(799px + (100% - 1000px) / 2);
+  }
+
+  .bg__clinicum,
+  .bg__panificadora {
+    width: calc(811px + (100% - 1000px) / 2);
   }
 
   .container__flex {
