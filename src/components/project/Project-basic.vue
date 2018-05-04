@@ -73,7 +73,7 @@
         const uxui = querySelect('.btn__uxui');
         const architecture = querySelect('.btn__architecture');
         const contact = querySelect('#contact');
-        const heightBase = window.scrollY + window.innerHeight / 2.5;
+        const heightBase = window.scrollY + window.innerHeight / 2.45;
         const classNameUx = ' bg__uxui--active';
         const classNameArch = ' bg__arch--active';
         const classNameImg = ' img--active';
@@ -137,7 +137,7 @@
     position: absolute;
     padding-top: 3em;
     opacity: 0;
-    transition: all 1s ease;
+    transition: all .9s ease;
     width: 0;
     z-index: -999;
   }

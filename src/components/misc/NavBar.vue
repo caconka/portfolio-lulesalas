@@ -129,9 +129,6 @@
   #buttons a:not(.btn):hover:after {
     width: 100%;
   }
-  #buttons .btn--active {
-    box-shadow: inset 0 -0.12em var(--gold);
-  }
 
   .icon__flash {
     height: 1.7em;
@@ -155,7 +152,7 @@
       justify-content: flex-end;
       position: absolute;
       right: 0;
-      transform: translateY(3em);
+      transform: translateY(2.5em);
       top: 1em;
       width: 100vw;
     }
@@ -191,6 +188,17 @@
 
     .sandwich {
       display: block;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    #buttons .btn__uxui,
+    #buttons .btn__architecture {
+      transition: all .3s ease-out;
+    }
+
+    #buttons .btn--active {
+      box-shadow: inset 0 -0.12em var(--gold);
     }
   }
 </style>
