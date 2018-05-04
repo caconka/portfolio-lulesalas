@@ -95,13 +95,16 @@
           bgClinicum.className += classNameArch;
           clinicum.className += classNameImg;
         }
+        if (this.control.length >= 4) {
+          window.removeEventListener('scroll', this.handleScroll);
+        }
       }
     },
     created () {
-        window.addEventListener('scroll', this.handleScroll);
+      window.addEventListener('scroll', this.handleScroll);
     },
     destroyed () {
-        window.removeEventListener('scroll', this.handleScroll);
+      window.removeEventListener('scroll', this.handleScroll);
     }
   }
 </script>
