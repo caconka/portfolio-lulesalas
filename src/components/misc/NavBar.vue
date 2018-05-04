@@ -15,6 +15,7 @@
       <div id="buttons" @click="toggleButtons()">
         <div class="buttons__container" @click.prevent="toggleButtons">
           <a
+            class="btn__uxui"
             href="#"
             v-scroll-to="{el: '#uxui', offset: - 72}"
             @click="toggleButtons()"
@@ -22,6 +23,7 @@
             {{$t('navbar.uxui')}}
           </a>
           <a
+            class="btn__architecture"
             href="#"
             v-scroll-to="{el: '#architecture', offset: - 100}"
             @click="toggleButtons()"
@@ -120,12 +122,15 @@
     content: '';
     display: block;
     height: 3px;
-    transition: width 0.2s ease-out;
+    transition: all 0.2s ease-out;
     width: 0%;
   }
 
   #buttons a:not(.btn):hover:after {
     width: 100%;
+  }
+  #buttons .btn--active {
+    box-shadow: inset 0 -0.12em var(--gold);
   }
 
   .icon__flash {

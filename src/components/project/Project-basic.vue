@@ -70,33 +70,45 @@
         const yingyang = querySelect('.yingyangyumm');
         const pani = querySelect('.panificadora');
         const clinicum = querySelect('.clinicum');
+        const uxui = querySelect('.btn__uxui');
+        const architecture = querySelect('.btn__architecture');
+        const contact = querySelect('#contact');
         const heightBase = window.scrollY + window.innerHeight / 2.5;
         const classNameUx = ' bg__uxui--active';
         const classNameArch = ' bg__arch--active';
         const classNameImg = ' img--active';
 
-        if (heightBase > bgLocspot.offsetTop && this.control.length < 1) {
-          this.control.push(1);
-          bgLocspot.className += classNameUx;
-          locspot.className += classNameImg;
+        if (heightBase > bgLocspot.offsetTop && heightBase < bgPani.offsetTop) {
+          if (this.control.length < 1) {
+            this.control.push(1);
+            bgLocspot.className += classNameUx;
+            locspot.className += classNameImg;
+          }
+          architecture.className = 'btn__architecture';
+          uxui.className = 'btn__uxui btn--active'
         }
         if (heightBase > bgYingyang.offsetTop && this.control.length < 2) {
           this.control.push(2);
           bgYingyang.className += classNameUx;
           yingyang.className += classNameImg;
         }
-        if (heightBase > bgPani.offsetTop && this.control.length < 3) {
-          this.control.push(3);
-          bgPani.className += classNameArch;
-          pani.className += classNameImg;
+        if (heightBase > bgPani.offsetTop && heightBase < contact.offsetTop) {
+          if (this.control.length < 3) {
+            this.control.push(3);
+            bgPani.className += classNameArch;
+            pani.className += classNameImg;
+          }
+          uxui.className = 'btn__uxui';
+          architecture.className = 'btn__architecture btn--active';
         }
         if (heightBase > bgClinicum.offsetTop && this.control.length < 4) {
           this.control.push(4);
           bgClinicum.className += classNameArch;
           clinicum.className += classNameImg;
         }
-        if (this.control.length >= 4) {
-          window.removeEventListener('scroll', this.handleScroll);
+        if (heightBase < bgLocspot.offsetTop || heightBase > contact.offsetTop) {
+          uxui.className = 'btn__uxui';
+          architecture.className = 'btn__architecture';
         }
       }
     },
