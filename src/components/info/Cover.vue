@@ -63,6 +63,10 @@
     margin: 0;
   }
 
+  .header--important strong:hover {
+    cursor: url('../../assets/img/unicorn.png'), auto;
+  }
+
   header > h2 {
     color: var(--pink);
     font-weight: 400;
