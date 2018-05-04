@@ -70,7 +70,7 @@
         const yingyang = querySelect('.yingyangyumm');
         const pani = querySelect('.panificadora');
         const clinicum = querySelect('.clinicum');
-        const heightBase = window.scrollY + window.innerHeight / 3;
+        const heightBase = window.scrollY + window.innerHeight / 2.5;
         const classNameUx = ' bg__uxui--active';
         const classNameArch = ' bg__arch--active';
         const classNameImg = ' img--active';
@@ -125,7 +125,7 @@
     position: absolute;
     padding-top: 3em;
     opacity: 0;
-    transition: all .8s ease;
+    transition: all 1s ease;
     width: 0;
     z-index: -999;
   }
@@ -173,7 +173,7 @@
   .project__image img {
     max-height: 88%;
     opacity: 0;
-    transition: all .8s ease;
+    transition: all .6s ease;
   }
 
   .project__image .img--active {
