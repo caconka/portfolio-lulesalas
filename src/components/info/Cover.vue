@@ -179,14 +179,14 @@
 
   @media only screen and (max-width: 600px) {
     header {
-      padding-top: 35%;
+      padding-top: 10%;
     }
 
     .anchors {
       align-items: flex-start;
       flex-direction: column;
       justify-content: space-between;
-      height: 48%;
+      height: 45%;
     }
 
     .anchors a {

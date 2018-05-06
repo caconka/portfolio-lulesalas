@@ -116,20 +116,6 @@
     margin-bottom: 3px;
   }
 
-  #buttons a:not(.btn):after,
-  #buttons a:not(.btn):before {
-    box-shadow: inset 0 -0.12em var(--gold);
-    content: '';
-    display: block;
-    height: 3px;
-    transition: all 0.2s ease-out;
-    width: 0%;
-  }
-
-  #buttons a:not(.btn):hover:after {
-    width: 100%;
-  }
-
   .icon__flash {
     height: 1.7em;
     vertical-align: text-bottom;
@@ -192,6 +178,20 @@
   }
 
   @media only screen and (min-width: 600px) {
+    #buttons a:not(.btn):after,
+    #buttons a:not(.btn):before {
+      box-shadow: inset 0 -0.12em var(--gold);
+      content: '';
+      display: block;
+      height: 3px;
+      transition: all 0.2s ease-out;
+      width: 0%;
+    }
+
+    #buttons a:not(.btn):hover:after {
+      width: 100%;
+    }
+
     #buttons .btn__uxui,
     #buttons .btn__architecture {
       transition: all .3s ease-out;
