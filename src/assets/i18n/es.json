@@ -1,99 +1,99 @@
 {
-  "navbar": {
-    "uxui": "Diseño UX/UI",
-    "architect": "Arquitectura",
-    "contact": "Contacto"
-  },
-  "cover": {
-    "title": {
-      "one": "Arquitecta",
-      "two": "Diseñadora UX/UI",
-      "three": "afincada en Madrid"
-    },
-    "subtitle": "¡HOLA! SOY LULE SALAS",
-    "about": "¿QUIERES SABER MÁS SOBRE MÍ?"
-  },
-  "tastes": {
-    "title": "Me encanta lo que hago",
-    "first": {
-      "one": "Me apasiona el diseño en todas sus formas y encontrar",
-      "two": "soluciones creativas",
-      "three": "a problemas concretos a través de él."
-    },
-    "second": {
-      "one": "Soy amante de los",
-      "two": "procesos y metodologías",
-      "three": "creo que pueden llevarte allí donde nunca hubieras imaginado."
-    },
-    "third": {
-      "one": "Considero la",
-      "two": "comunicación y empatía",
-      "three": "herramientas fundamentales para poder llevar a cabo cualquier proceso con éxito: con el equipo, el cliente y el usuario, pues creo que nunca debe olvidarse qué ni",
-      "four": "para quién se está diseñando"
-    },
-    "motivation": {
-      "title": "motivación",
-      "description": "Creo en la motivación como motor de trabajo, me gusta lo que hago y me gusta hacerlo bien."
-    },
-    "teamwork": {
-      "title": "trabajo en equipo",
-      "description": "Escucharse, entenderse, respetarse y complementarse, para trabajar mejor y más agusto."
-    },
-    "learning": {
-      "title": "aprendizaje continuo",
-      "description": "Soy muy aficionada a las charlas, eventos y workshops: te mantienen al día y alimentan la curiosidad que fomenta el crecimiento."
-    }
-  },
-  "projects": {
-    "title": "Mis proyectos",
-    "locspot": {
-      "name": "Locspot",
-      "type": "DISEÑO UX/UI",
-      "title": "Encuentra la localización ideal con Locspot",
-      "description": "Plataforma digital que garantiza el acceso a las mejores localizaciones (para hacer sesiones de fotos o sets de grabaciones) a través de la visión única de localizadores profesionales.",
-      "images": {
-        "basic": "https://dl.dropboxusercontent.com/s/8zdb6kz9ureavuu/mock-locspot.png?dl=0"
-      },
-      "url": ""
-    },
-    "yingyangyumm": {
-      "name": "Ying Yang Yumm",
-      "type": "DISEÑO UX/UI",
-      "title": "Come más sano y variado con Ying Yang Yumm",
-      "description": "Obtén todos las ventajas de tener un nutricionista que organiza tu menú semanal y te recomienda recetas con alimentos que te benefician en base a tu estado de salud.",
-      "images": {
-        "basic": "https://dl.dropboxusercontent.com/s/58kmeeypcnan87l/yingyangyumm.png?dl=0"
-      },
-      "url": ""
-    },
-    "clinicum": {
-      "name": "Clínica alpina",
-      "type": "ARQUITECTURA",
-      "title": "Clínica alpina para el tratamiento del estrés",
-      "description": "El objetivo del proyecto es generar un ambiente que promueva, apoye y facilite el tratamiento de pacientes que sufren enfermedades derivadas del estrés.",
-      "images": {
-        "basic": "https://dl.dropboxusercontent.com/s/ymsqt2vha34vg2h/dorf12.png?dl=0"
-      },
-      "url": "https://caconka.github.io/portfolio-lsc/es_portfolio/pr_clinicum2.html"
-    },
-    "panificadora": {
-      "name": "La panificadora",
-      "type": "ARQUITECTURA",
-      "title": "Rehabilitación del complejo \"La Panificadora\"",
-      "description": "Concurso internacional para la reactivación del complejo \"La Panificadora\" en el centro de la ciudad española de Vigo.",
-      "images": {
-        "basic": "https://dl.dropboxusercontent.com/s/r2wqmhpr9l10p24/vigo06.jpg?dl=0"
-      },
-      "url": "https://caconka.github.io/portfolio-lsc/es_portfolio/pr_panificadora.html"
-    }
-  },
-  "contact": {
-    "name": "CONTACTO",
-    "title": "¿Quieres hablar conmigo?",
-    "description": "Me encantan los desafíos, los nuevos retos y ¡siempre estoy preparada para escuchar nuevas propuestas! ¿tienes un proyecto?, ¿una idea?, ¿algo interesante que contar?",
-    "contact": "Escríbeme a"
-  },
-  "footer": {
-    "find": "TAMBIÉN PUEDES ENCONTRARME EN"
-  }
+	"navbar": {
+		"uxui": "Diseño UX/UI",
+		"architect": "Arquitectura",
+		"contact": "Contacto"
+	},
+	"cover": {
+		"title": {
+			"one": "Arquitecta",
+			"two": "Diseñadora UX/UI",
+			"three": "afincada en Madrid"
+		},
+		"subtitle": "¡HOLA! SOY LULE SALAS",
+		"about": "¿QUIERES SABER MÁS SOBRE MÍ?"
+	},
+	"tastes": {
+		"title": "Me encanta lo que hago",
+		"first": {
+			"one": "Me apasiona el diseño en todas sus formas y encontrar",
+			"two": "soluciones creativas",
+			"three": "a problemas concretos a través de él."
+		},
+		"second": {
+			"one": "Soy amante de los",
+			"two": "procesos y metodologías",
+			"three": "creo que pueden llevarte allí donde nunca hubieras imaginado."
+		},
+		"third": {
+			"one": "Considero la",
+			"two": "comunicación y empatía",
+			"three": "herramientas fundamentales para poder llevar a cabo cualquier proceso con éxito: con el equipo, el cliente y el usuario, pues creo que nunca debe olvidarse qué ni",
+			"four": "para quién se está diseñando"
+		},
+		"motivation": {
+			"title": "motivación",
+			"description": "Creo en la motivación como motor de trabajo, me gusta lo que hago y me gusta hacerlo bien."
+		},
+		"teamwork": {
+			"title": "trabajo en equipo",
+			"description": "Escucharse, entenderse, respetarse y complementarse, para trabajar mejor y más agusto."
+		},
+		"learning": {
+			"title": "aprendizaje continuo",
+			"description": "Soy muy aficionada a las charlas, eventos y workshops: te mantienen al día y alimentan la curiosidad que fomenta el crecimiento."
+		}
+	},
+	"projects": {
+		"title": "Mis proyectos",
+		"locspot": {
+			"name": "Locspot",
+			"type": "DISEÑO UX/UI",
+			"title": "Encuentra la localización ideal con Locspot",
+			"description": "Plataforma digital que garantiza el acceso a las mejores localizaciones (para hacer sesiones de fotos o sets de grabaciones) a través de la visión única de localizadores profesionales.",
+			"images": {
+				"basic": "https://dl.dropboxusercontent.com/s/8zdb6kz9ureavuu/mock-locspot.png?dl=0"
+			},
+			"url": ""
+		},
+		"yingyangyumm": {
+			"name": "Ying Yang Yumm",
+			"type": "DISEÑO UX/UI",
+			"title": "Come más sano y variado con Ying Yang Yumm",
+			"description": "Obtén todos las ventajas de tener un nutricionista que organiza tu menú semanal y te recomienda recetas con alimentos que te benefician en base a tu estado de salud.",
+			"images": {
+				"basic": "https://dl.dropboxusercontent.com/s/58kmeeypcnan87l/yingyangyumm.png?dl=0"
+			},
+			"url": ""
+		},
+		"clinicum": {
+			"name": "Clínica alpina",
+			"type": "ARQUITECTURA",
+			"title": "Clínica alpina para el tratamiento del estrés",
+			"description": "El objetivo del proyecto es generar un ambiente que promueva, apoye y facilite el tratamiento de pacientes que sufren enfermedades derivadas del estrés.",
+			"images": {
+				"basic": "https://dl.dropboxusercontent.com/s/ymsqt2vha34vg2h/dorf12.png?dl=0"
+			},
+			"url": "https://caconka.github.io/portfolio-lsc/es_portfolio/pr_clinicum2.html"
+		},
+		"panificadora": {
+			"name": "La panificadora",
+			"type": "ARQUITECTURA",
+			"title": "Rehabilitación del complejo \"La Panificadora\"",
+			"description": "Concurso internacional para la reactivación del complejo \"La Panificadora\" en el centro de la ciudad española de Vigo.",
+			"images": {
+				"basic": "https://dl.dropboxusercontent.com/s/r2wqmhpr9l10p24/vigo06.jpg?dl=0"
+			},
+			"url": "https://caconka.github.io/portfolio-lsc/es_portfolio/pr_panificadora.html"
+		}
+	},
+	"contact": {
+		"name": "CONTACTO",
+		"title": "¿Quieres hablar conmigo?",
+		"description": "Me encantan los desafíos, los nuevos retos y ¡siempre estoy preparada para escuchar nuevas propuestas! ¿tienes un proyecto?, ¿una idea?, ¿algo interesante que contar?",
+		"contact": "Escríbeme a"
+	},
+	"footer": {
+		"find": "TAMBIÉN PUEDES ENCONTRARME EN"
+	}
 }

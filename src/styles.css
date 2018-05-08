@@ -3,190 +3,189 @@
 /* GLOBALS */
 
 :root {
-  --gold: #e8d7bc;
-  --pink: #edbcb2;
-  --gray: #9b9b9b;
-  --lightGray: #cdcdcd;
-  --black: #333;
-  --white: #ffffff;
+	--gold: #e8d7bc;
+	--pink: #edbcb2;
+	--gray: #9b9b9b;
+	--lightGray: #cdcdcd;
+	--black: #333;
+	--white: #ffffff;
 
-  --screenHeight: calc(100vh - var(--navbarHeight));
-  --bgCardsHeight: fit-content;
-  --proyectCardWidth: 20.9em;
-  --footerHeight: 4em;
+	--screenHeight: calc(100vh - var(--navbarHeight));
+	--bgCardsHeight: fit-content;
+	--proyectCardWidth: 20.9em;
+	--footerHeight: 4em;
 }
 
 /* GENERIC */
 
 html {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: var(--black);
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: var(--black);
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
 a {
-  color: var(--black);
-  text-decoration: none;
+	color: var(--black);
+	text-decoration: none;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 p {
-  line-height: 1.5em;
+	line-height: 1.5em;
 }
 
 .body {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .container {
-  height: var(--screenHeight);
-  margin: 0 auto;
-  width: var(--maxWidth);
+	height: var(--screenHeight);
+	margin: 0 auto;
+	width: var(--maxWidth);
 }
 
 .container__card {
-  margin: 0 auto;
-  width: var(--maxWidth);
+	margin: 0 auto;
+	width: var(--maxWidth);
 }
 
 .header--important {
-  font-size: 3em;
-  font-weight: lighter;
+	font-size: 3em;
+	font-weight: lighter;
 }
 
 .playfair {
-  font-family: 'Playfair Display', serif;
+	font-family: 'Playfair Display', serif;
 }
 
 /* COLORS */
 
 .pink {
-  color: var(--pink);
+	color: var(--pink);
 }
 
 .white {
-  color: var(--white);
+	color: var(--white);
 }
 
 .gray {
-  color: var(--gray);
+	color: var(--gray);
 }
 
 .bgGray {
-  background-color: var(--gray);
+	background-color: var(--gray);
 }
 
 .black {
-  color: var(--black);
+	color: var(--black);
 }
 
 .bgBlack {
-  background-color: var(--black);
-  color: var(--white);
+	background-color: var(--black);
+	color: var(--white);
 }
 
 /* ELEMENTS */
 
 .btn {
-  padding: 0.6em 1.1em;
-  transition: 0.5s ease;
+	padding: 0.6em 1.1em;
+	transition: 0.5s ease;
 }
 
 .bar {
-  background: var(--gold);
-  border-radius: 1px;
-  height: 4px;
-  width: 15%;
+	background: var(--gold);
+	border-radius: 1px;
+	height: 4px;
+	width: 15%;
 }
 
 /* ICONS */
 
 .linkedin {
-  background-image: url('assets/img/linkedin.svg');
+	background-image: url('assets/img/linkedin.svg');
 }
 
 .medium {
-  background-image: url('assets/img/medium.svg');
+	background-image: url('assets/img/medium.svg');
 }
 
 .behance {
-  background-image: url('assets/img/behance.svg');
+	background-image: url('assets/img/behance.svg');
 }
 
 .instagram {
-  background-image: url('assets/img/instagram.svg');
+	background-image: url('assets/img/instagram.svg');
 }
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 600px) {
-  :root {
-    --footerHeight: 5em;
-  }
+	:root {
+		--footerHeight: 5em;
+	}
 
-  html {
-    font-size: 13px;
-  }
+	html {
+		font-size: 13px;
+	}
 
-  .header--important {
-    font-size: 1.7em;
-  }
+	.header--important {
+		font-size: 1.7em;
+	}
 
-  h2 {
-    font-size: 1.3em;
-  }
+	h2 {
+		font-size: 1.3em;
+	}
 
-  .bar {
-    height: 2px;
-  }
+	.bar {
+		height: 2px;
+	}
 }
 
 @media only screen and (max-width: 960px) {
-  :root {
-    --navbarHeight: 4em;
-  }
+	:root {
+		--navbarHeight: 4em;
+	}
 
-  html {
-    font-size: 15px;
-  }
+	html {
+		font-size: 15px;
+	}
 
-  .header--important {
-    font-size: 1.9em;
-  }
+	.header--important {
+		font-size: 1.9em;
+	}
 
-  h2 {
-    font-size: 1.3em;
-  }
+	h2 {
+		font-size: 1.3em;
+	}
 
-  .bar {
-    height: 3px;
-  }
+	.bar {
+		height: 3px;
+	}
 }
 
 @media only screen and (min-width: 960px) {
-  :root {
-    --navbarHeight: 4.5em;
-  }
+	:root {
+		--navbarHeight: 4.5em;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
-  :root {
-    --maxWidth: 90%;
-  }
+	:root {
+		--maxWidth: 90%;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
-  :root {
-    --maxWidth: 1060px;
-    --bgCardsHeight: 414px;
-  }
+	:root {
+		--maxWidth: 1060px;
+		--bgCardsHeight: 414px;
+	}
 }
-

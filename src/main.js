@@ -7,24 +7,23 @@ import VueScrollTo from 'vue-scrollto';
 import VueI18n from 'vue-i18n';
 
 const messages = {
-  es: require('@/assets/i18n/es.json')
-}
+	es: require('@/assets/i18n/es.json')
+};
 
 Vue.config.productionTip = false;
 Vue.use(VueScrollTo);
 Vue.use(VueI18n);
 
 const i18n = new VueI18n({
-  locale: 'es',
-  messages
-})
+	locale: 'es',
+	messages
+});
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  i18n,
-  components: { App },
-  template: '<App/>'
+	el: '#app',
+	router,
+	i18n,
+	components: {App},
+	template: '<App/>'
 });
-
