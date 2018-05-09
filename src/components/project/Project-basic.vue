@@ -1,6 +1,10 @@
 <template>
 	<div :id="project === 'panificadora' ? 'architecture' : ''">
 		<div class="container__full">
+			<div
+				v-if="project === 'yingyangyumm' || project === 'locspot'"
+				:class="index % 2 === 0 ? 'bg__triangle--left' : 'bg__triangle--right'"
+			></div>
 			<img
 				src="@/assets/img/background.jpg"
 				alt="background"
@@ -133,6 +137,25 @@ export default {
 	margin-bottom: 12.5em;
 	background-size: cover;
 	height: var(--bgCardsHeight);
+}
+
+.bg__triangle--left,
+.bg__triangle--right {
+	border: solid calc(110px + (100vw - 1060px) / 2);
+	opacity: .15;
+	position: absolute;
+	transform: translateY(calc(-62px - (100vw - 1060px) / 2));
+	z-index: 1;
+}
+
+.bg__triangle--left {
+	left: 0;
+	border-color: transparent transparent transparent var(--pink);
+}
+
+.bg__triangle--right {
+	right: 0;
+	border-color: transparent var(--gold) transparent transparent;
 }
 
 .bg--left,
