@@ -312,6 +312,7 @@ footer {
 
 	.section__mobile h4 {
 		margin: 0 0 .2em 0;
+		z-index: 2;
 	}
 
 	.project__card {
