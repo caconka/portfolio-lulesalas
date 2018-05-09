@@ -179,7 +179,7 @@ p {
 
 @media only screen and (max-width: 1200px) {
 	:root {
-		--maxWidth: 90%;
+		--maxWidth: 90vw;
 	}
 }
 

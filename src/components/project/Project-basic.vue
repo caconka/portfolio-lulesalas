@@ -141,10 +141,10 @@ export default {
 
 .bg__triangle--left,
 .bg__triangle--right {
-	border: solid calc(110px + (100vw - 1060px) / 2);
+	border: solid calc(110px + (100vw - var(--maxWidth)) / 2);
 	opacity: .15;
 	position: absolute;
-	transform: translateY(calc(-62px - (100vw - 1060px) / 2));
+	transform: translateY(calc(-62px - (100vw - var(--maxWidth)) / 2));
 	z-index: 1;
 }
 
@@ -270,6 +270,22 @@ footer {
 		padding-top: 3.5em;
 	}
 
+	.bg__triangle--left,
+	.bg__triangle--right {
+		border: solid calc(140px + (100vw - var(--maxWidth)));
+		transform: translateY(calc(-88px - (100vw - var(--maxWidth))));
+	}
+
+	.bg__triangle--left {
+		left: 0;
+		border-color: transparent transparent transparent var(--pink);
+	}
+
+	.bg__triangle--right {
+		right: 0;
+		border-color: transparent var(--gold) transparent transparent;
+	}
+
 	.arch {
 		height: 156px;
 	}
@@ -321,6 +337,22 @@ footer {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
+	.bg__triangle--left,
+	.bg__triangle--right {
+		border: solid calc(110px + (100vw - var(--maxWidth)));
+		transform: translateY(calc(-62px - (100vw - var(--maxWidth))));
+	}
+
+	.bg__triangle--left {
+		left: 0;
+		border-color: transparent transparent transparent var(--pink);
+	}
+
+	.bg__triangle--right {
+		right: 0;
+		border-color: transparent var(--gold) transparent transparent;
+	}
+
 	.project__card h2 {
 		font-size: 1.5em;
 	}
