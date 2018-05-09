@@ -87,7 +87,7 @@ export default {
 			const classNameImg = ' img--active';
 
 			if (heightBase > bgLocspot.offsetTop && heightBase < bgPani.offsetTop) {
-				if (this.control.length < 1) {
+				if (this.control.indexOf(1) === -1 ) {
 					this.control.push(1);
 					bgLocspot.className += classNameUx;
 					locspot.className += classNameImg;
@@ -95,13 +95,13 @@ export default {
 				architecture.className = 'btn__architecture';
 				uxui.className = 'btn__uxui btn--active'
 			}
-			if (heightBase > bgYingyang.offsetTop && this.control.length < 2) {
+			if (heightBase > bgYingyang.offsetTop && this.control.indexOf(2) === -1) {
 				this.control.push(2);
 				bgYingyang.className += classNameUx;
 				yingyang.className += classNameImg;
 			}
 			if (heightBase > bgPani.offsetTop && heightBase < contact.offsetTop) {
-				if (this.control.length < 3) {
+				if (this.control.indexOf(3) === -1) {
 					this.control.push(3);
 					bgPani.className += classNameArch;
 					pani.className += classNameImg;
@@ -109,7 +109,7 @@ export default {
 				uxui.className = 'btn__uxui';
 				architecture.className = 'btn__architecture btn--active';
 			}
-			if (heightBase > bgClinicum.offsetTop && this.control.length < 4) {
+			if (heightBase > bgClinicum.offsetTop && this.control.indexOf(4) === -1) {
 				this.control.push(4);
 				bgClinicum.className += classNameArch;
 				clinicum.className += classNameImg;
