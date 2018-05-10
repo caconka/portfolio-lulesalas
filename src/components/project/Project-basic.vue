@@ -8,7 +8,7 @@
 			<img
 				src="@/assets/img/background.jpg"
 				alt="background"
-				:class="index % 2 === 0 ? 'bg--left bg__' + project : 'bg--right bg__' + project"
+				:class="[index % 2 === 0 ? 'bg--left' : 'bg--right', 'bg__' + project, {'bg__uxui--active': projects[project]}]"
 			>
 			<div
 				:class="index % 2 === 0 ? 'container__flex' : 'container__flex reverse'"
@@ -20,7 +20,7 @@
 				</div>
 				<div class="project__image" :class="index === 1 ? 'img__ying' : ''">
 					<img
-						:class="project"
+						:class="[project, {'img--active': projects[project]}]"
 						:src="$t(`projects.${project}.images.basic`)"
 						alt="Project photo"
 					>
@@ -58,8 +58,25 @@ function querySelect(selector) {
 	return document.querySelector(selector);
 }
 
+function addRemoveClass(uxui, arch) {
+	const uxuiNav = querySelect('.btn__uxui');
+	const architectureNav = querySelect('.btn__architecture');
+	uxui
+		? uxuiNav.className = 'btn__uxui btn--active'
+		: uxuiNav.className = 'btn__uxui';
+	arch
+		? architectureNav.className = 'btn__architecture btn--active'
+		: architectureNav.className = 'btn__architecture';
+
+}
+
 const data = {
-	control: []
+	projects: {
+		locspot: false,
+		yingyangyumm: false,
+		clinicum: false,
+		panificadora: false
+	}
 }
 
 export default {
@@ -74,49 +91,25 @@ export default {
 			const bgYingyang = querySelect('.bg__yingyangyumm');
 			const bgPani = querySelect('.bg__panificadora');
 			const bgClinicum = querySelect('.bg__clinicum');
-			const locspot = querySelect('.locspot');
-			const yingyang = querySelect('.yingyangyumm');
-			const pani = querySelect('.panificadora');
-			const clinicum = querySelect('.clinicum');
-			const uxui = querySelect('.btn__uxui');
-			const architecture = querySelect('.btn__architecture');
 			const contact = querySelect('#contact');
 			const heightBase = window.scrollY + window.innerHeight / 2.45;
-			const classNameUx = ' bg__uxui--active';
-			const classNameArch = ' bg__arch--active';
-			const classNameImg = ' img--active';
 
 			if (heightBase > bgLocspot.offsetTop && heightBase < bgPani.offsetTop) {
-				if (this.control.indexOf(1) === -1 ) {
-					this.control.push(1);
-					bgLocspot.className += classNameUx;
-					locspot.className += classNameImg;
+				this.projects.locspot = true;
+				addRemoveClass(true, false);
+				if (heightBase > bgYingyang.offsetTop) {
+					this.projects.yingyangyumm = true;
 				}
-				architecture.className = 'btn__architecture';
-				uxui.className = 'btn__uxui btn--active'
-			}
-			if (heightBase > bgYingyang.offsetTop && this.control.indexOf(2) === -1) {
-				this.control.push(2);
-				bgYingyang.className += classNameUx;
-				yingyang.className += classNameImg;
 			}
 			if (heightBase > bgPani.offsetTop && heightBase < contact.offsetTop) {
-				if (this.control.indexOf(3) === -1) {
-					this.control.push(3);
-					bgPani.className += classNameArch;
-					pani.className += classNameImg;
+				this.projects.panificadora = true;
+				addRemoveClass(false, true);
+				if (heightBase > bgClinicum.offsetTop) {
+					this.projects.clinicum = true;
 				}
-				uxui.className = 'btn__uxui';
-				architecture.className = 'btn__architecture btn--active';
-			}
-			if (heightBase > bgClinicum.offsetTop && this.control.indexOf(4) === -1) {
-				this.control.push(4);
-				bgClinicum.className += classNameArch;
-				clinicum.className += classNameImg;
 			}
 			if (heightBase < bgLocspot.offsetTop || heightBase > contact.offsetTop) {
-				uxui.className = 'btn__uxui';
-				architecture.className = 'btn__architecture';
+				addRemoveClass(false, false);
 			}
 		}
 	},
