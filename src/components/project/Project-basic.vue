@@ -8,7 +8,7 @@
 			<img
 				src="@/assets/img/background.jpg"
 				alt="background"
-				:class="[index % 2 === 0 ? 'bg--left' : 'bg--right', 'bg__' + project, {'bg__uxui--active': projects[project]}]"
+				:class="[index % 2 === 0 ? 'bg--left' : 'bg--right', 'bg__' + project, {'bg__uxui--active': projects.uxui[project], 'bg__arch--active': projects.arch[project]}]"
 			>
 			<div
 				:class="index % 2 === 0 ? 'container__flex' : 'container__flex reverse'"
@@ -20,7 +20,7 @@
 				</div>
 				<div class="project__image" :class="index === 1 ? 'img__ying' : ''">
 					<img
-						:class="[project, {'img--active': projects[project]}]"
+						:class="[project, {'img--active': projects.uxui[project] || projects.arch[project]}]"
 						:src="$t(`projects.${project}.images.basic`)"
 						alt="Project photo"
 					>
@@ -81,10 +81,14 @@ function addRemoveClass(uxui, arch) {
 
 const data = {
 	projects: {
-		locspot: false,
-		yingyangyumm: false,
-		clinicum: false,
-		panificadora: false
+		uxui: {
+			locspot: false,
+			yingyangyumm: false
+		},
+		arch: {
+			clinicum: false,
+			panificadora: false
+		}
 	}
 }
 
@@ -93,6 +97,13 @@ export default {
 	props: ['project', 'index'],
 	data () {
 		return data;
+	},
+	computed: {
+		imgBgClass: function({index, project}) {
+			return index % 2 === 0
+				? 'bg--left bg__' + project
+				: 'bg--right bg__' + project
+		}
 	},
 	methods: {
 		handleScroll () {
@@ -104,17 +115,17 @@ export default {
 			const heightBase = window.scrollY + window.innerHeight / 2.45;
 
 			if (heightBase > bgLocspot.offsetTop && heightBase < bgPani.offsetTop) {
-				this.projects.locspot = true;
+				this.projects.uxui.locspot = true;
 				addRemoveClass(true, false);
 				if (heightBase > bgYingyang.offsetTop) {
-					this.projects.yingyangyumm = true;
+					this.projects.uxui.yingyangyumm = true;
 				}
 			}
 			if (heightBase > bgPani.offsetTop && heightBase < contact.offsetTop) {
-				this.projects.panificadora = true;
+				this.projects.arch.panificadora = true;
 				addRemoveClass(false, true);
 				if (heightBase > bgClinicum.offsetTop) {
-					this.projects.clinicum = true;
+					this.projects.arch.clinicum = true;
 				}
 			}
 			if (heightBase < bgLocspot.offsetTop || heightBase > contact.offsetTop) {
