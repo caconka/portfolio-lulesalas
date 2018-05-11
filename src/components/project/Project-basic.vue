@@ -40,11 +40,20 @@
 					</section>
 					<footer :class="index % 2 === 0 ? 'right' : ''">
 						<a
+							v-if="index === 2 || index === 3"
 							:target="project === 'panificadora' || project === 'clinicum' ? '_blank' : ''"
 							:href="$t(`projects.${project}.url`)"
 							class="btn bgBlack"
 						>
 							Ver proyecto ______
+						</a>
+						<a
+							v-else
+							:target="project === 'panificadora' || project === 'clinicum' ? '_blank' : ''"
+							:href="$t(`projects.${project}.url`)"
+							class="btn bgWhite"
+						>
+							Próximamente ______
 						</a>
 					</footer>
 				</div>
@@ -243,6 +252,10 @@ header h2 {
 
 footer {
 	margin-top: 4em;
+}
+
+.bgWhite {
+	border: solid 1px #333;
 }
 
 @media only screen and (max-width: 600px) {
