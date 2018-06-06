@@ -61,13 +61,16 @@ function querySelect(selector) {
 function addRemoveClass(uxui, arch) {
 	const uxuiNav = querySelect('.btn__uxui');
 	const architectureNav = querySelect('.btn__architecture');
-	uxui
-		? uxuiNav.className = 'btn__uxui btn--active'
-		: uxuiNav.className = 'btn__uxui';
-	arch
-		? architectureNav.className = 'btn__architecture btn--active'
-		: architectureNav.className = 'btn__architecture';
-
+	if (uxui) {
+		uxuiNav.className = 'btn__uxui btn--active';
+	} else {
+		uxuiNav.className = 'btn__uxui';
+	}
+	if (arch) {
+		architectureNav.className = 'btn__architecture btn--active';
+	} else {
+		architectureNav.className = 'btn__architecture';
+	}
 }
 
 const data = {
@@ -81,29 +84,29 @@ const data = {
 			panificadora: false
 		}
 	}
-}
+};
 
 export default {
 	name: 'ProjectBasic',
 	props: ['project', 'index'],
-	data () {
+	data() {
 		return data;
 	},
 	computed: {
-		imgBgClass: function({index, project}) {
-			return index % 2 === 0
-				? 'bg--left bg__' + project
-				: 'bg--right bg__' + project
+		imgBgClass: function ({index, project}) {
+			return index % 2 === 0 ?
+				'bg--left bg__' + project :
+				'bg--right bg__' + project;
 		}
 	},
 	methods: {
-		handleScroll () {
+		handleScroll() {
 			const bgLocspot = querySelect('.bg__locspot');
 			const bgYingyang = querySelect('.bg__yingyangyumm');
 			const bgPani = querySelect('.bg__panificadora');
 			const bgClinicum = querySelect('.bg__clinicum');
 			const contact = querySelect('#contact');
-			const heightBase = window.scrollY + window.innerHeight / 2.45;
+			const heightBase = window.scrollY + (window.innerHeight / 2.45);
 
 			if (heightBase > bgLocspot.offsetTop && heightBase < bgPani.offsetTop) {
 				this.projects.uxui.locspot = true;
@@ -124,13 +127,13 @@ export default {
 			}
 		}
 	},
-	created () {
+	created() {
 		window.addEventListener('scroll', this.handleScroll);
 	},
-	destroyed () {
+	destroyed() {
 		window.removeEventListener('scroll', this.handleScroll);
 	}
-}
+};
 </script>
 
 <style scoped>

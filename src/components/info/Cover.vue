@@ -50,9 +50,9 @@
 export default {
 	name: 'Cover',
 	methods: {
-		goto: (link) => window.open(link)
+		goto: link => window.open(link)
 	}
-}
+};
 </script>
 
 <style scoped>

@@ -18,7 +18,7 @@ export default {
 		'app-project-list': ProjectList,
 		'app-contact': Contact
 	}
-}
+};
 </script>
 
 <style scoped>

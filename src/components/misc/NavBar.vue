@@ -28,7 +28,7 @@
 						v-scroll-to="{el: '#architecture', offset: - 100}"
 						@click="toggleButtons()"
 					>
-					 {{$t('navbar.architect')}}
+						{{$t('navbar.architect')}}
 					</a>
 					<a
 						v-scroll-to="'#contact'"
@@ -54,12 +54,14 @@ export default {
 			if (buttons.style.display !== 'flex') {
 				buttons.style.display = 'flex';
 			} else if (window.innerWidth < 600) {
-				setTimeout(() => buttons.style.display = 'none', 220);
+				setTimeout(() => {
+					buttons.style.display = 'none';
+				}, 200);
 			}
 			setTimeout(() => container.classList.toggle('active'), 100);
 		}
 	}
-}
+};
 </script>
 
 <style scoped>

@@ -10,7 +10,7 @@
 				:index="index"
 				:project="project"
 				:key="project"
-			 >
+			>
 			</app-project-basic>
 		</section>
 	</div>
@@ -21,7 +21,7 @@ import ProjectBasic from './Project-basic';
 
 const data = {
 	projects: ['locspot', 'yingyangyumm', 'panificadora', 'clinicum']
-}
+};
 
 export default {
 	name: 'ProjectList',
@@ -31,7 +31,7 @@ export default {
 	data() {
 		return data;
 	}
-}
+};
 </script>
 
 <style scoped>

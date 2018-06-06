@@ -30,9 +30,9 @@
 export default {
 	name: 'Footer',
 	methods: {
-		goto: (link) => window.open(link)
+		goto: link => window.open(link)
 	}
-}
+};
 </script>
 
 <style scoped>

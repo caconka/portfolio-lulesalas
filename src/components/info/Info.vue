@@ -15,7 +15,7 @@ export default {
 		'app-cover': Cover,
 		'app-tastes': Tastes
 	}
-}
+};
 </script>
 
 <style scoped>
