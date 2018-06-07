@@ -52,7 +52,8 @@
 			"title": "Encuentra la localización ideal con Locspot",
 			"description": "Plataforma digital que garantiza el acceso a las mejores localizaciones (para hacer sesiones de fotos o sets de grabaciones) a través de la visión única de localizadores profesionales.",
 			"images": {
-				"basic": "https://dl.dropboxusercontent.com/s/8zdb6kz9ureavuu/mock-locspot.png?dl=0"
+				"basic": "https://dl.dropboxusercontent.com/s/8zdb6kz9ureavuu/mock-locspot.png?dl=0",
+				"infoCover": "https://www.planwallpaper.com/static/images/sea-background01-o.jpg"
 			},
 			"url": "https://www.behance.net/gallery/60001605/locspot"
 		},
@@ -62,7 +63,9 @@
 			"title": "Come más sano y variado con Ying Yang Yumm",
 			"description": "Obtén todos las ventajas de tener un nutricionista que organiza tu menú semanal y te recomienda recetas con alimentos que te benefician en base a tu estado de salud.",
 			"images": {
-				"basic": "https://dl.dropboxusercontent.com/s/58kmeeypcnan87l/yingyangyumm.png?dl=0"
+				"basic": "https://dl.dropboxusercontent.com/s/58kmeeypcnan87l/yingyangyumm.png?dl=0",
+				"infoCover": "https://www.planwallpaper.com/static/images/sea-background01-o.jpg",
+				"info1": "https://dl.dropboxusercontent.com/s/1m5edwd90pz9clx/yingyangyumm01.png?dl=0"
 			},
 			"url": "https://www.behance.net/gallery/64540349/YingYang-YUMM-App"
 		},

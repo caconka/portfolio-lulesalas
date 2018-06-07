@@ -146,43 +146,6 @@ ul li:not(:nth-child(1)) {
 	background-image: url('../../assets/img/instagram-pink.svg');
 }
 
-.arrows {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	height: calc(60vh - 15em);
-	justify-content: flex-end;
-}
-
-.arrows > img:hover {
-	cursor: pointer;
-}
-
-@keyframes blink {
-	0% {
-		opacity: 0;
-	}
-	30% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-
-.arrows img {
-	margin-top: -0.2em;
-	width: 1.5em;
-	animation-name: blink;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-fill-mode: both;
-}
-
-.arrows img:nth-child(2) {
-	animation-delay: 0.2s;
-}
-
 @media only screen and (max-width: 600px) {
 	header {
 		padding-top: 10%;
@@ -210,10 +173,6 @@ ul li:not(:nth-child(1)) {
 		height: 1.3em;
 		width: 1.3em;
 		margin-bottom: .5em;
-	}
-
-	.arrows {
-		height: 10%;
 	}
 }
 </style>

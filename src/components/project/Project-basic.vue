@@ -194,12 +194,6 @@ export default {
 	width: calc(811px + (100% - 1000px) / 2);
 }
 
-.container__flex {
-	width: var(--maxWidth);
-	display: flex;
-	justify-content: space-between;
-}
-
 .reverse {
 	flex-direction: row-reverse;
 }
