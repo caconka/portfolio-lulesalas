@@ -42,10 +42,11 @@
 							</p>
 						</section>
 					</div>
-					<img class="full-width" src="" alt="">
+					<img class="full-width"
+						:src="$t('projects.yingyangyumm.images.basic')" alt=""/>
 					<div class="more-info">
 						<div class="img__content">
-							<img src="" alt="">
+							<img :src="$t('projects.yingyangyumm.images.basic')" alt=""/>
 						</div>
 						<section>
 							<h3 class="playfair lighter">
@@ -83,10 +84,15 @@ h4 {
 	margin: 0;
 }
 
+.full-width {
+	margin: 1.5em 0 3em 0;
+	width: 100%;
+}
+
 .img__content {
 	grid-area: img;
 	height: 80vh;
-	max-height: 685px;
+	max-height: 670px;
 	justify-self: center;
 }
 
@@ -152,6 +158,7 @@ h4 {
 
 .more-info .img__content {
 	height: 570px;
+	margin-right: 1em;
 	max-height: 570px;
 }
 
